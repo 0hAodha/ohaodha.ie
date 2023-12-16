@@ -4,7 +4,6 @@ date = 2023-12-16T18:55:22Z
 draft = false
 +++
 
-# My First Post
 Here is some text about my first post, isn't it awesome. 
 
 ## Code
