@@ -12,7 +12,7 @@ Renders a menu for the given menu ID.
 
 {{- with index site.Menus $menuID }}
   <nav>
-    <ul>
+    <ul style="display: flex; justify-content: space-between;">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
@@ -33,7 +33,7 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li>
+    <li style="display: inline-block; margin-right: 30pt;">
       <a
         {{- range $k, $v := $attrs }}
           {{- with $v }}
@@ -49,3 +49,5 @@ Renders a menu for the given menu ID.
     </li>
   {{- end }}
 {{- end }}
+
+<hr>
