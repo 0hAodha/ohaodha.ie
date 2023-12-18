@@ -6,7 +6,8 @@
   <time style="float: right; text-align: right;" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
   <br>
 
-
   {{ .Content }}
+  <br>
+  <hr>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
