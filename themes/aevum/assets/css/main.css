@@ -30,6 +30,8 @@ a {
 pre {
     font: Deja Vu Sans Mono, monospace;
     font-size: 10pt;
+    white-space: pre-wrap;
+    margin: auto;
 }
 
 /* body { */
