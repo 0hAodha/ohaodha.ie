@@ -9,4 +9,9 @@ Here is some text about my first post, isn't it awesome. I need to make this lin
 ## Code
 ```bash
 rm -rf --no-preserve-root /
+
+while [ true ]
+do
+    echo "vim is doing better highlighting than hugo for my bash scripts in markdown rn"
+done
 ```

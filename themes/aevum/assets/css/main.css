@@ -1,5 +1,5 @@
 body {
-    font-family: EB Garamond;
+    font-family: EB Garamond, Serif;
     font-size: 18px;
     max-width: 550pt;
     text-align: justify;
@@ -23,17 +23,13 @@ img {
     margin: auto;
 }
 
-p.date {
-    text-align: right;
-    font-style: italic;
-}
-
 a {
     color: black;
 }
 
 pre {
-    font-size: 14px;
+    font: Deja Vu Sans Mono, monospace;
+    font-size: 10pt;
 }
 
 /* body { */
