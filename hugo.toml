@@ -4,7 +4,7 @@ title = 'Ó hAodha'
 theme = "aevum"
 
 [markup]
-  [markup.highlight]
+    [markup.highlight]
     anchorLineNos = true
     codeFences = true
     guessSyntax = true
