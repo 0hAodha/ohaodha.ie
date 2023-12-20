@@ -15,3 +15,9 @@ do
     echo "vim is doing better highlighting than hugo for my bash scripts in markdown rn"
 done
 ```
+
+As you can see above, I am using the `rm` command to `r`ecursively and `f`orcefully remove each file & directory starting at the root (`/`) directory, and not preserving the root directory as is usually 
+done by default for safety purposes: I cannot imagine a situation in which it would actually be appropriate to remove the root directory other than for the purposes of messing about or perhaps 
+disabling / wiping an entire system. 
+
+Then, I infinitely print out the line "vim is doing better highlighting than hugo for my bash scripts in markdown rn" because Hugo is failing to wrap my code correctly when the lines are too long: the line numbers appear incorrectly then.

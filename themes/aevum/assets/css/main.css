@@ -27,9 +27,9 @@ a {
     color: black;
 }
 
-pre {
+pre, code {
     font: Deja Vu Sans Mono, monospace;
-    font-size: 10pt;
+    font-size: 10.5pt;
     white-space: pre-wrap;
     margin: auto;
 }
