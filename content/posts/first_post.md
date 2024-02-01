@@ -21,3 +21,4 @@ done by default for safety purposes: I cannot imagine a situation in which it wo
 disabling / wiping an entire system. 
 
 Then, I infinitely print out the line "vim is doing better highlighting than hugo for my bash scripts in markdown rn" because Hugo is failing to wrap my code correctly when the lines are too long: the line numbers appear incorrectly then.
+Here is some inline code: ```System.out.println("hello world")```
