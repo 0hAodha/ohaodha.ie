@@ -1,10 +1,21 @@
-body, li {
+body {
     font-family: EB Garamond, Serif;
     font-size: 18px;
     max-width: 550pt;
     text-align: justify;
     text-justify: inter-word;
     margin: auto;
+    padding-left:  20pt; 
+    padding-right: 20pt; 
+}
+
+li {
+    font-family: EB Garamond, Serif;
+    font-size: 18px;
+    max-width: 550pt;
+    text-align: justify;
+    text-justify: inter-word;
+    /* margin: auto; */
     padding-left:  20pt; 
     padding-right: 20pt; 
 }
