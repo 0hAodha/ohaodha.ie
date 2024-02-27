@@ -1,7 +1,7 @@
 body {
     font-family: EB Garamond, Serif;
     font-size: 18px;
-    max-width: 550pt;
+    max-width: 600pt;
     text-align: justify;
     text-justify: inter-word;
     margin: auto;
@@ -12,7 +12,7 @@ body {
 li {
     font-family: EB Garamond, Serif;
     font-size: 18px;
-    max-width: 550pt;
+    max-width: 600pt;
     text-align: justify;
     text-justify: inter-word;
     /* margin: auto; */
@@ -30,7 +30,7 @@ h2 {
 
 img {
     display: block;
-    max-width: 550pt;
+    max-width: 600pt;
     margin: auto;
 }
 
