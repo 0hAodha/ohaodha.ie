@@ -44,10 +44,17 @@ a:hover {
 
 pre, code {
     font: Deja Vu Sans Mono, monospace;
-    font-size: 10.5pt;
+    font-size: 10pt;
     overflow-x: auto;
     white-space: pre;
     max-width: 500pt;
+
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    padding-left: 1px;
+    padding-right: 1px;
+        /* line-height: 1.5; */
 }
 
 /* body { */
