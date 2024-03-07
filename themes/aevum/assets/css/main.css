@@ -38,6 +38,10 @@ a {
     color: black;
 }
 
+a:hover {
+    background-color: #ffff99;
+}
+
 pre, code {
     font: Deja Vu Sans Mono, monospace;
     font-size: 10.5pt;
