@@ -20,13 +20,14 @@ li {
     padding-right: 20pt; 
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
 h2 {
     font-weight: normal;
 }
+
 
 img {
     display: block;
