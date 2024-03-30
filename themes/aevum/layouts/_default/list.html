@@ -3,8 +3,9 @@
   {{ .Content }}
   <ul>
   {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ .Summary }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a><div style="float: right; text-align: right;">{{ time.Format "2006–01–02" .Date }}</div></li>
+    <!-- <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li> -->
+    <!-- {{ .Summary }} -->
   {{ end }}
   </ul>
 {{ end }}
