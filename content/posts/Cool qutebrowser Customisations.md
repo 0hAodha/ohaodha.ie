@@ -2,6 +2,7 @@
 title = 'Cool qutebrowser Customisations'
 date = 2024-04-19T20:03:27+01:00
 draft = false
+tags = ['programming', 'hacking', 'web', 'tutorial']
 +++
 
 ## What is qutebrowser?
