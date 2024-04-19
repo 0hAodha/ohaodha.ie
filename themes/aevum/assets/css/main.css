@@ -48,7 +48,7 @@ pre, code {
     font-size: 10pt;
     overflow-x: auto;
     white-space: pre;
-    max-width: 500pt;
+    /* max-width: 500pt; */
 
     background-color: #f6f8fa;
     border: 1px solid #d1d5da;
@@ -103,3 +103,8 @@ tr:nth-child(even) {
 /* tr:hover { */
 /*   background-color: #ddd; */
 /* } */
+
+figcaption {
+    text-align: center;
+    text-justify: inter-word;
+}
