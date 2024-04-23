@@ -52,6 +52,15 @@ a:hover {
     background-color: #ffff99;
 }
 
+/* a:link:hover { */
+/*     background-color: #8FB5E1; */
+/* } */
+/**/
+/* a:visited:hover { */
+/*     background-color: #D6B1FF  */
+/* } */
+
+
 pre, code {
     font: Deja Vu Sans Mono, monospace;
     font-size: 10pt;
