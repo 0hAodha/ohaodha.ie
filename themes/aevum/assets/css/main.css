@@ -26,7 +26,7 @@ li {
     text-justify: inter-word;
     /* margin: auto; */
     padding-left:  10pt; 
-    padding-right: 10pt; 
+    padding-right: 0pt; 
 }
 
 h1, h2, h3 {
