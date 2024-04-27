@@ -103,6 +103,7 @@ table {
     width: 100%;
     max-width: 100%;
     border-collapse: collapse;
+    overflow: auto;
 }
 
 th, td {
