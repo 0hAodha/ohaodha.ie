@@ -24,8 +24,8 @@ li {
     max-width: 600pt;
     text-align: justify;
     text-justify: inter-word;
-    /* margin: auto; */
-    padding-left:  10pt; 
+    margin-left: -13pt;
+    padding-left:  5pt; 
     padding-right: 0pt; 
 }
 
