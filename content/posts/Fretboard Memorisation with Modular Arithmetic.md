@@ -23,7 +23,7 @@ memory and using some tricks to help with that memorisation; however, I have a n
 ### Aside: What is Modular Arithmetic?
 While I would encourage anyone not already familiar with modular arithmetic to read up on it in detail themselves, I'll
 give a brief explanation here so that anyone can understand what I'm talking about (a good overview can be found in the
-book *Discrete Mathematics -- An Open Introduction by Oscar Levin*
+book *Discrete Mathematics -- An Open Introduction* by Oscar Levin
 [here](https://discrete.openmathbooks.org/dmoi3/sec_addtops-numbth.html#iyd)).
 **Modular arithmetic** refers to number systems in which the values don't get higher and higher towards infinity, but
 rather wrap around and start again from 0 once a certain maximum number called the **modulus** is reached.
