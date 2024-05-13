@@ -38,8 +38,8 @@ If an event start at 23:00 and takes 2 hours, we don't say that it finishes at "
 Modular arithmetic can also be thought of as dividing any given number by the modulus and getting the remainder.
 For example, \\(30 \text{ mod } 24 \equiv 6 \\) because \\(30 \div 24 = 0 \text{ remainder } 6\\).
 
-Incidentally, many resources refer to the 12-hour clock as classic example of a system of modular arithmetic but I think
-that this is a poor example, as the 12-hour clock starts at 1 and ends at 12, meaning that it's not quite modulo 12
+Incidentally, many resources refer to the 12-hour clock as a classic example of a system of modular arithmetic, but I think
+that this is a poor example as the 12-hour clock starts at 1 and ends at 12, meaning that it's not quite modulo 12
 (which starts at 0 and ends at 11) and also not quite modulo 13 (which start at 0 and ends at 12).
 
 ## My System
