@@ -155,6 +155,14 @@ summary {
     cursor: pointer;
 }
 
+/* details > summary { */
+/*     list-style-image: url("/images/maniscule-right-small.png"); */
+/* } */
+/**/
+/* details[open] > summary { */
+/*     list-style-image: url("/images/maniscule-down-small.png"); */
+/* } */
+
 /* Indent the content inside details */
 details > :not(summary) {
     margin-left: 20px;
