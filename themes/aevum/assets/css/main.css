@@ -137,7 +137,26 @@ figure {
     margin: auto;
     margin-bottom: 10px;
 }
- img {
-     max-width: 100%;
-     margin-bottom: 5px;
- }
+
+img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+details {
+    border: 1px solid black; /* Border around the details */
+    padding: 10px; /* Padding inside the border */
+    margin: 10px 0; /* Margin to separate multiple details */
+}
+
+/* Style for the summary element (the clickable part) */
+summary {
+    outline: none;
+    cursor: pointer;
+}
+
+/* Indent the content inside details */
+details > :not(summary) {
+    margin-left: 20px;
+}
+
