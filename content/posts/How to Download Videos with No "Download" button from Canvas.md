@@ -1,5 +1,5 @@
 +++
-title = 'How to Download Videos with No “Download” button from Canvas'
+title = 'How to Download Videos with No “Download” Button from Canvas'
 date  = 2024-02-26T16:58:00Z
 tags  = ['tutorial', 'web', 'hacking']
 +++
@@ -25,19 +25,19 @@ files and that other video formats are supported.
     Before going any further, I suggest you double-check that there is no download button and that you
     can't right-click on the vide and select "Save media" to save yourself the trouble of the following steps.
     <figure>
-      <img src="/images/canvas_video_with_download_options.png" alt="Canvas Video with Download Options">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/canvas_video_with_download_options.png" alt="Canvas Video with Download Options">
       <figcaption>Figure 1: Canvas Video with Download Options</figcaption>
     </figure>
 
     <figure>
-      <img src="/images/canvas_video_without_download_options.png" alt="Canvas Video without Download Options">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/canvas_video_without_download_options.png" alt="Canvas Video without Download Options">
       <figcaption>Figure 2: Canvas Video without Download Options</figcaption>
     </figure>
 
 1.  Open your browser's Inspector window by right-clicking anywhere on the page and selecting "Inspect" and navigate to
     the "Network" tab of the Inspector window.
     <figure>
-      <img src="/images/network_tab_of_inspector_window.png" alt="Network Tab of the Inspector Window">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/network_tab_of_inspector_window.png" alt="Network Tab of the Inspector Window">
       <figcaption>Figure 3: Network Tab of the Inspector Window</figcaption>
     </figure>
 
@@ -47,7 +47,7 @@ files and that other video formats are supported.
 1.  Click on the video to start playing it.
     A number of network requests will be displayed in the Inspector window; we are interested in the last one.
     <figure>
-      <img src="/images/filter_mp4_network_tab_of_inspector_window.png" alt="Network Requests Containing the String 'mp4'">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/filter_mp4_network_tab_of_inspector_window.png" alt="Network Requests Containing the String 'mp4'">
       <figcaption>Figure 4: Network Requests Containing the String <code>mp4</code></figcaption>
     </figure>
 
@@ -57,7 +57,7 @@ files and that other video formats are supported.
     If you are on a UNIX-like system such as GNU/Linux or MacOS, click the "Copy as cURL" option in the sub-menu.
     If you are on Windows, click the "Copy as PowerShell" option.
     <figure>
-      <img src="/images/copy_network_request_as_curl.png" alt="Copy Network Request as cURL">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/copy_network_request_as_curl.png" alt="Copy Network Request as cURL">
       <figcaption>Figure 5: Copy Network Request as cURL</figcaption>
     </figure>
 
@@ -68,6 +68,6 @@ files and that other video formats are supported.
     The download directory can be specified by prepending the path to that directory to the file name, otherwise it
     will default to your home directory.
     <figure>
-      <img src="/images/run_curl_command_canvas.png" alt="Run the cURL Command">
+      <img src="/images/How to Download Videos with No Download Button from Canvas/run_curl_command_canvas.png" alt="Run the cURL Command">
       <figcaption>Figure 6: Run the cURL Command</figcaption>
     </figure>
