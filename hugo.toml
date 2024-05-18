@@ -4,6 +4,8 @@ title = 'Ó hAoḋa'
 theme = "aevum"
 
 [markup]
+  [markup.tableOfContents]
+    ordered = true
   [markup.goldmark]
     duplicateResourceFiles = false
     [markup.goldmark.extensions]
