@@ -168,3 +168,15 @@ details > :not(summary) {
     margin-left: 20px;
 }
 
+/* drop caps */
+main > p:first-of-type::first-letter {
+    font-family: "Gadelica";
+    font-size: 40pt;
+    font-weight: normal;
+    text-transform: capitalize;
+    border: 2px solid black;
+    float: left;
+    margin: 0 .12em 0 0;
+    padding: 0.07em;
+    /* line-height: 0.85em; */
+}
