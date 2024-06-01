@@ -180,3 +180,11 @@ main > p:first-of-type::first-letter {
     padding: 0.07em;
     /* line-height: 0.85em; */
 }
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-roman;
+}
