@@ -25,7 +25,7 @@ theme = "aevum"
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)']]
+          inline = [['\(', '\)'], ['$', '$']]
       [markup.goldmark.extensions.typographer]
         apostrophe = '&rsquo;'
         disable = false
