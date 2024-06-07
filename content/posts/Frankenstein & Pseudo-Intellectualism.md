@@ -1,7 +1,7 @@
 +++
 title = 'Frankenstein & Pseudo-Intellectualism'
 date = 2024-04-21T20:52:08+01:00
-draft = false
+draft = true
 +++
 
 *<p style='text-align: center'>or, The Modern Prometheus & Pseudo-Intellectualism</p>*
