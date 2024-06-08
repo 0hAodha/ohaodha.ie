@@ -191,3 +191,7 @@ ol {
 ol ol {
   list-style-type: lower-roman;
 }
+
+.MathJax {
+    font-size: 0.95em !important;
+}
