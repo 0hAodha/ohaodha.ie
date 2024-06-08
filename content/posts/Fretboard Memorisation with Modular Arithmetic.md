@@ -58,8 +58,8 @@ Then, to find out what note a certain fret corresponds to, we can just find its 
 note on the string, we can just look at the frets at multiples of the value of the note.
 
 | $A$ | $A^\#$  / $B^\flat$ | $B$ | $C$ | $C^\#$ / $D^\flat$ | $D$ | $D^\#$ / $E^\flat$ | $E$ | $F$ | $F^\#$ / $G^\flat$ |  $G$ | $G^\#$ / $A^\flat$ | 
-|---------|-------------|---------|---------|-------------|---------|-------------|---------|---------|-------------|----------|-------------|
-| $0$ |     $1$ | $2$ | $3$ |     $4$ | $5$ |     $6$ | $7$ | $8$ |     $9$ | $10$ |    $11$ | 
+|-----|---------------------|-----|-----|--------------------|-----|--------------------|-----|-----|--------------------|------|--------------------|
+| $0$ | $1$                 | $2$ | $3$ | $4$                | $5$ | $6$                | $7$ | $8$ | $9$                | $10$ | $11$               |
 
 This same system can actually be generalised to all the other strings on the guitar with little adaptation.
 The only difference is that we need to remember at what number on the scale each string starts and add this to the
