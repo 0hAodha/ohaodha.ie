@@ -55,7 +55,7 @@ theme = "aevum"
       unsafe = true
       xhtml = false
     [markup.highlight]
-    anchorLineNos = true
+    anchorLineNos = false
     codeFences = true
     guessSyntax = true
     hl_Lines = ''
