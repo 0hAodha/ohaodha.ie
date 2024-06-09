@@ -60,44 +60,24 @@ a:hover {
 /*     background-color: #D6B1FF  */
 /* } */
 
+code {
+    font-size: 0.75em;
+}
+
+pre {
+    border: 1px solid #ddd;
+    padding: 10pt;
+}
 
 pre, code {
     font: Deja Vu Sans Mono, monospace;
-    font-size: 10pt;
     overflow-x: auto;
     white-space: pre;
-    /* max-width: 500pt; */
-
-    background-color: #f6f8fa;
-    border: 1px solid #d1d5da;
-    border-radius: 4px;
-    padding-left: 1px;
-    padding-right: 1px;
-        /* line-height: 1.5; */
+    /* background-color: #f6f8fa; */
+    /* border-radius: 4px; */
+    /* padding-left: 1px; */
+    /* padding-right: 1px; */
 }
-
-/* body { */
-/*   color: #222; */
-/*   font-family: sans-serif; */
-/*   line-height: 1.5; */
-/*   margin: 1rem; */
-/*   max-width: 768px; */
-/* } */
-/**/
-/* header { */
-/*   border-bottom: 1px solid #222; */
-/*   margin-bottom: 1rem; */
-/* } */
-/**/
-/* footer { */
-/*   border-top: 1px solid #222; */
-/*   margin-top: 1rem; */
-/* } */
-/**/
-/* a { */
-/*   color: #00e; */
-/*   text-decoration: none; */
-/* } */
 
 table {
     display: block;
