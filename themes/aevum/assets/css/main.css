@@ -16,6 +16,7 @@ body {
     margin: auto;
     padding-left:  20pt; 
     padding-right: 20pt; 
+    counter-reset: figure-counter;
 }
 
 li {
@@ -112,6 +113,10 @@ figcaption {
     text-justify: inter-word;
 }
 
+figcaption::before {
+    content: "Figure " counter(figure-counter) ": ";
+}
+
 figure {
     text-align: center;
     border: 1px solid black;
@@ -119,6 +124,7 @@ figure {
     display: block;
     margin: auto;
     margin-bottom: 10px;
+    counter-increment: figure-counter;
 }
 
 img {

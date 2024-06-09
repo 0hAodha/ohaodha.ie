@@ -26,19 +26,19 @@ files and that other video formats are supported.
     can't right-click on the vide and select "Save media" to save yourself the trouble of the following steps.
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/canvas_video_with_download_options.png" alt="Canvas Video with Download Options">
-      <figcaption>Figure 1: Canvas Video with Download Options</figcaption>
+      <figcaption>Canvas Video with Download Options</figcaption>
     </figure>
 
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/canvas_video_without_download_options.png" alt="Canvas Video without Download Options">
-      <figcaption>Figure 2: Canvas Video without Download Options</figcaption>
+      <figcaption>Canvas Video without Download Options</figcaption>
     </figure>
 
 1.  Open your browser's Inspector window by right-clicking anywhere on the page and selecting "Inspect" and navigate to
     the "Network" tab of the Inspector window.
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/network_tab_of_inspector_window.png" alt="Network Tab of the Inspector Window">
-      <figcaption>Figure 3: Network Tab of the Inspector Window</figcaption>
+      <figcaption>Network Tab of the Inspector Window</figcaption>
     </figure>
 
 1.  Enter the term `mp4` into the "Filter" box (called "Filter URLs" on Firefox) to only display network results
@@ -48,7 +48,7 @@ files and that other video formats are supported.
     A number of network requests will be displayed in the Inspector window; we are interested in the last one.
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/filter_mp4_network_tab_of_inspector_window.png" alt="Network Requests Containing the String 'mp4'">
-      <figcaption>Figure 4: Network Requests Containing the String <code>mp4</code></figcaption>
+      <figcaption>Network Requests Containing the String <code>mp4</code></figcaption>
     </figure>
 
 1.  Right-click on the last result displayed in the Inspector window, and hover the mouse over the "Copy" option in the
@@ -58,7 +58,7 @@ files and that other video formats are supported.
     If you are on Windows, click the "Copy as PowerShell" option.
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/copy_network_request_as_curl.png" alt="Copy Network Request as cURL">
-      <figcaption>Figure 5: Copy Network Request as cURL</figcaption>
+      <figcaption>Copy Network Request as cURL</figcaption>
     </figure>
 
 1.  Open a terminal emulator (or PowerShell on a Windows machine) and paste the command you copied into the command
@@ -69,5 +69,5 @@ files and that other video formats are supported.
     will default to your home directory.
     <figure>
       <img src="/images/How to Download Videos with No Download Button from Canvas/run_curl_command_canvas.png" alt="Run the cURL Command">
-      <figcaption>Figure 6: Run the cURL Command</figcaption>
+      <figcaption>Run the cURL Command</figcaption>
     </figure>
