@@ -77,7 +77,7 @@ worked just fine, but became too difficult to use for Combinatorics, so I revert
 I even did some mathematics homework entirely within Logseq, and took notes from tutorials in it as well.
 
 <figure>
-  <img src="/images/Evolution of My Approach to Note-Taking/Graph Theory Notes in Logseq.png" alt="Graph Theory Notes in Logseq">
+  <img src="image/Graph Theory Notes in Logseq.png" alt="Graph Theory Notes in Logseq">
   <figcaption>Figure 2: Graph Theory Notes in Logseq</figcaption>
 </figure>
 
