@@ -72,14 +72,14 @@ number of scripts that redirect each social media page to the alternative fronte
 // @run-at      document-start
 // ==/UserScript==
 
-let alt = "libreddit.kavin.rocks" 
+const alt = "libreddit.kavin.rocks" 
 
 location.href=location.href.replace(/(www.)?reddit.com/gi, alt);
 console.log("redirected reddit.com to " + alt);
 ```
 ```javascript
 // ==UserScript==
-// @name        reddit to libreddit redirector
+// @name        tiktok to proxitok redirector
 // @include     /^https?:\/\/(www\.)?tiktok\.com\/.*$/
 // @run-at      document-start
 // ==/UserScript==
