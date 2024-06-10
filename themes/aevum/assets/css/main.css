@@ -17,6 +17,14 @@ body {
     padding-left:  20pt; 
     padding-right: 20pt; 
     counter-reset: figure-counter;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 li {
@@ -181,3 +189,10 @@ ol ol {
 .MathJax {
     font-size: 0.95em !important;
 }
+
+/* body footer { */
+/*    position : absolute; */
+/*    bottom : 0; */
+/*    height : 40px; */
+/*    margin-top : 40px; */
+/* } */
