@@ -196,3 +196,8 @@ ol ol {
 /*    height : 40px; */
 /*    margin-top : 40px; */
 /* } */
+
+.gaelic {
+    font-family: Gadelica;
+    font-size: 1.2em;
+}
