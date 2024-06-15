@@ -22,14 +22,14 @@ I'll skip over the ~~boring~~ common configurations that have been covered to de
 turning on dark mode or launching the current URL in `mpv` and skip to configurations that I think have something interesting to them.
 
 ### Video Speed Controls
-Most video platforms only allow you to speed up a video to \\(2\times\\) speed, which I often find to be not as fast as
+Most video platforms only allow you to speed up a video to $2\times$ speed, which I often find to be not as fast as
 I would like.
-I rarely watch a video on lower than \\(2\times\\) speed, unless the timing of the video is important, such as music or
-comedy, and often want to watch videos on \\(3\times\\) or \\(4\times\\) speed.
+I rarely watch a video on lower than $2\times$ speed, unless the timing of the video is important, such as music or
+comedy, and often want to watch videos on $3\times$ or $4\times$ speed.
 
 The following lines of code, when added to the qutebrowser `config.py` configuration file, make the up & down arrow keys
 into video speed controllers which increase the speed of videos on the page by quarter-increments at time, and allows
-speeds in excess of the typical limit \\(2\times\\) to be achieved:
+speeds in excess of the typical limit $2\times$ to be achieved:
 
 ```python
 # control video speed
@@ -109,7 +109,7 @@ console.log("redirected youtube.com to yewtu.be");
 ```
 
 ### Smart Video Speed Reset
-As I mentioned above, I typically have my video speeds set to \\(2\times\\) or above except for videos in which the
+As I mentioned above, I typically have my video speeds set to $2\times$ or above except for videos in which the
 timing is important, such as music or comedy. 
 The following userscript detects the category of a YouTube video and resets the speed to normal speed.
 ```javascript
