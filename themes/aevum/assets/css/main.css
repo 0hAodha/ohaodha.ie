@@ -28,11 +28,6 @@ main {
 }
 
 li {
-    font-family: EB Garamond, Serif;
-    font-size: 18px;
-    max-width: 600pt;
-    text-align: justify;
-    text-justify: inter-word;
     margin-left: -13pt;
     padding-left:  5pt; 
     padding-right: 0pt; 
