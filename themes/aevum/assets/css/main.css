@@ -196,3 +196,8 @@ ol ol {
     font-family: Gadelica;
     font-size: 1.1em;
 }
+
+sup {
+    font-size: 0.6em;
+    vertical-align: top;
+}
