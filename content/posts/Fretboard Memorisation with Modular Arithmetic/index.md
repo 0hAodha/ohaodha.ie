@@ -36,7 +36,7 @@ If an event start at 23:00 and takes 2 hours, we don't say that it finishes at "
 01:00 as $23 + 2 = 25 \equiv 1 \text{ mod } 24$ (25 is *congruent* to 1 modulo 24).
 
 Modular arithmetic can also be thought of as dividing any given number by the modulus and getting the remainder.
-For example, $30 \text{ mod } 24 \equiv 6 $ because $30 \div 24 = 0 \text{ remainder } 6$.
+For example, $30 \text{ mod } 24 \equiv 6 $ because $30 \div 24 = 0 \text{ remainder } 6.$
 
 Incidentally, many resources refer to the 12-hour clock as a classic example of a system of modular arithmetic, but I think
 that this is a poor example as the 12-hour clock starts at 1 and ends at 12, meaning that it's not quite modulo 12
@@ -51,7 +51,7 @@ If you don't fret the string and pluck it, you get $A$, if you fret the string a
 get $A^\#$ (or $B^\flat$), et cetera.
 If you fret the string at the 12<sup>th</sup> fret, you get $A$ again, and if you fret the string at the
 13<sup>th</sup> fret, you get $A^\#$ again, in accordance with $12 \text{ mod } 12 \equiv 0$ and $13 \text{
-mod } 12 \equiv 1$.
+mod } 12 \equiv 1.$
 Hence, we already have a system for memorising all the notes on the $A$-string: it's just arithmetic modulo 12.
 All we need to do is memorise a value for each note in the chromatic scale. 
 Then, to find out what note a certain fret corresponds to, we can just find its value modulo 12, and to find a certain
@@ -68,7 +68,7 @@ Take for example one of the $E$ strings: this string is tuned to the note $E$ (w
 To find out what note is at the 5<sup>th</sup> fret of the $E$ string, we use the same approach as with the $A$
 string, but add the value that the string starts at to the fret number before getting its value modulo 12: 
 $7 + 5 = 12 \text{ modulo } 12 \equiv 0$, indicating that the note at the 5<sup>th</sup> fret of the $E$ string
-is an $A$.
+is an $A.$
 
 This approach can be generalised into a formula for any string in any tuning, provided that it has frets that go up in
 steps according to the 12 notes of the chromatic scale:
