@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
+    <h2>{{ .Title | markdownify }}</h2>
 
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman :=    time.Format "2006–01–02" .Date }}
@@ -11,7 +11,14 @@
         {{ .TableOfContents }}
     </details>
 
-    {{ .Content }}
+    <!-- {{ .Content }} -->
+
+    {{- with .Content -}}
+    <div>
+      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> §</a> ${3}` | safeHTML }}
+    </div>
+    {{- end -}}
+
     <hr>
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
