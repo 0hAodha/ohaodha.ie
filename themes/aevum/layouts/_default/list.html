@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
+  <h2>{{ .Title | markdownify }}</h2>
   {{ .Content }}
   <ul>
   {{ range .Pages }}
