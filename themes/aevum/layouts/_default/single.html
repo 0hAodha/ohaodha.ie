@@ -14,9 +14,7 @@
     <!-- {{ .Content }} -->
 
     {{- with .Content -}}
-    <div>
       {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor"> §</a> ${3}` | safeHTML }}
-    </div>
     {{- end -}}
 
     <hr>
