@@ -6,7 +6,7 @@ tags = ['programming', 'hacking', 'web', 'tutorial']
 +++
 
 ## What is qutebrowser?
-[**qutebrowser**](https://qutebrowser.org/index.html) is a keyboard-focused, minimal web browser written in Python. 
+Qutebrowser[^1] is a keyboard-focused, minimal web browser written in Python. 
 It makes use of Vim-like keybindings, and is surprisingly fast & memory-efficient for a browser written in Python: it
 generally starts up faster than the [Brave](https://brave.com/) browser on my machine, and consumes less memory than
 [Firefox](https://www.mozilla.org/en-US/firefox/) (which I've had memory leak issues with in the past).
@@ -127,3 +127,5 @@ if (document.getElementById("genre").innerHTML.includes("Music") || document.get
 ```
 Note that the above script is written to work on Invidious YouTube frontends rather than YouTube itself, although it could easily
 be adapted for YouTube by just adding it to the `@include` section.
+
+[^1]: https://qutebrowser.org/
