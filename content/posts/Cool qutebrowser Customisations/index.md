@@ -7,7 +7,8 @@ tags = ['programming', 'hacking', 'web', 'tutorial']
 
 ## What is qutebrowser?
 Qutebrowser[^1] is a keyboard-focused, minimal web browser written in Python. 
-It makes use of Vim-like keybindings, and is surprisingly fast & memory-efficient for a browser written in Python: it
+It makes use of Vim-like keybindings, and is surprisingly fast & memory-efficient considering the language in which it is
+written: it
 generally starts up faster than the [Brave](https://brave.com/) browser on my machine, and consumes less memory than
 [Firefox](https://www.mozilla.org/en-US/firefox/) (which I've had memory leak issues with in the past).
 
@@ -28,7 +29,7 @@ I rarely watch a video on lower than $2\times$ speed, unless the timing of the v
 comedy, and often want to watch videos on $3\times$ or $4\times$ speed.
 
 The following lines of code, when added to the qutebrowser `config.py` configuration file, make the up & down arrow keys
-into video speed controllers which increase the speed of videos on the page by quarter-increments at time, and allows
+into video speed controllers which increase the speed of videos on the page by quarter-increments at a time, and allows
 speeds in excess of the typical limit $2\times$ to be achieved:
 
 ```python
