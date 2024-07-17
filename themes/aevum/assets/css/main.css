@@ -52,17 +52,17 @@ a {
     color: black;
 }
 
-a:hover {
-    background-color: #ffff99;
+/* a:hover { */
+/*     font-weight: bold; */
+/* } */
+
+a:link:hover {
+    color: #004080;
 }
 
-/* a:link:hover { */
-/*     background-color: #8FB5E1; */
-/* } */
-/**/
-/* a:visited:hover { */
-/*     background-color: #D6B1FF  */
-/* } */
+a:visited:hover {
+    color: #800040;
+}
 
 code {
     font-size: 0.75em;
