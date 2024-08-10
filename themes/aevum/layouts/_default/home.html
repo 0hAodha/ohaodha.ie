@@ -3,8 +3,7 @@
   {{ .Content }}
   <ul>
   {{ range site.RegularPages }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a><div style="float: right; text-align: right;">{{ time.Format "2006–01–02" .Date }}</div></li>
-    <!-- {{ .Summary }} -->
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div></li>
   {{ end }}
   </ul>
 {{ end }}

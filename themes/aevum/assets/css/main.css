@@ -230,3 +230,14 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
+.listing_date {
+    float: right;
+    text-align: right;
+}
+
+@media (max-width: 650px) {
+    .listing_date {
+        display: none;
+    }
+}
