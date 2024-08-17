@@ -50,6 +50,7 @@ img {
 
 a {
     color: black;
+    text-underline-offset: 0.3em;
 }
 
 /* a:hover { */
