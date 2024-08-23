@@ -1,9 +1,13 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  {{ .Content }}
-  <ul>
-  {{ range site.RegularPages }}
-  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div></li>
-  {{ end }}
-  </ul>
+    <h2>{{ .Title }}</h2>
+
+    {{- with .Content -}}
+        {{ replaceRE `<p>(\s*\w+)` `<p><span style="font-variant: small-caps;">$1</span>` . 1 | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1} <a href="#${2}" class="hanchor" ariaLabel="Anchor">§</a> ${3}` | safeHTML }}
+    {{- end -}}
+
+    <ul>
+        {{ range site.RegularPages }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div></li>
+        {{ end }}
+    </ul>
 {{ end }}
