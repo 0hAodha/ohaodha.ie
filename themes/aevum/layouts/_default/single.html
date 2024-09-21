@@ -6,10 +6,13 @@
     <time style="float: right; text-align: right;" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     <br>
 
-    <details>
-        <summary><b>Table of Contents</b></summary>
-        {{ .TableOfContents }}
-    </details>
+
+    {{ if in .TableOfContents "<li>" }}
+        <details>
+            <summary><b>Table of Contents</b></summary>
+            {{ .TableOfContents }}
+        </details>
+    {{ end }}
 
     <!-- {{ .Content }} -->
 
