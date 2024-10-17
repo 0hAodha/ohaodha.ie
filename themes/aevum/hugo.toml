@@ -17,6 +17,12 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
+[[menus.main]]
+identifier = "gallery"
+name = "Gallery"
+url = "/gallery/"
+weight = 15
+
 [module]
   [module.hugoVersion]
     extended = false

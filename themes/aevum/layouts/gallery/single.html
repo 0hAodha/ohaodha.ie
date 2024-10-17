@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h2>{{ .Title | markdownify }}</h2>
+<p>{{ .Description }}</p>
+<div class="album">
+    {{ range .Resources.Match "*.JPG" }}
+    <a href="{{ .RelPermalink }}"><img src="{{ .RelPermalink }}" alt="{{ .Title }}" /></a>
+    {{ end }}
+</div>
+{{ end }}
