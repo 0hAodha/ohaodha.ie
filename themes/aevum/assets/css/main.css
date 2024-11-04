@@ -170,8 +170,12 @@ main > p:first-of-type::first-letter {
     border: 2px solid black;
     float: left;
     margin: 0 .12em 0 0;
-    padding: 0.07em;
-    /* line-height: 0.85em; */
+    /* padding: 0.07em; */
+    line-height: 0.7em;
+    display: inline-block;
+    padding: 0.07em; /* Adjust as needed */
+    padding-top:    0.25em;
+    padding-bottom: 0.25em;
 }
 
 ol {
