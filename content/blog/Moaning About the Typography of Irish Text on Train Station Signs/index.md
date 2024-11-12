@@ -14,7 +14,7 @@ Horrifying, isn't it?
 
 I shan't complain about the ugly font & colours, as this seems to be a standard choice across Iarnróid Éireann stations, and I can forgive the weirdly cramped *síneadh fada*, distasteful as it may be.
 The presence of [tittles](https://en.wikipedia.org/wiki/Tittle) on the *I*s is where I really begin to take issue: traditionally, Gaelic orthography excludes the tittle, and so too did Irish road signs up until the utterly tasteless decision was made to start dotting the *I*s[^2].
-However, my primary issue is with the use of the ampersand in the Irish text: the Irish alphabet does not include the ampersand, and "⁊" is used instead.
+However, my primary issue is with the use of the ampersand in the Irish text: the Irish alphabet does not include the ampersand, and "<span class="gaelic">⁊</span>" is used instead.
 This symbol is called the *Torinian Et* in English or more simply the *agus* (literally "and") in Irish.
 While my complaint about the presence of tittles could be reasonably dismissed by saying that it's simply an alternative typeface rendering and is consistent with the Roman type used to write Irish as opposed to the Gaelic type, the inclusion of an ampersand cannot be dismissed so easily;
 including the ampersand is to insert a foreign character that has no historical basis in Irish writing, displacing an ancient character that is firmly rooted in Irish writing history.
