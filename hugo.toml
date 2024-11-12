@@ -41,7 +41,7 @@ theme = "aevum"
         [markup.goldmark.parser]
             autoHeadingID = true
             autoHeadingIDType = 'github'
-            wrapStandAloneImageWithinParagraph = true
+            wrapStandAloneImageWithinParagraph = false
             [markup.goldmark.parser.attribute]
                 block = false
                 title = true
