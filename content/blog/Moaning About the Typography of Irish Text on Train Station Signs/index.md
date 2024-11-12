@@ -1,8 +1,7 @@
 +++
 title = 'Moaning About the Typography of Irish Text on Train Station Signs'
-date = 2024-11-09T02:25:54Z
+date = 2024-11-12
 tags = ["article", "typefaces", "Gaeilge", "Moaning"]
-draft = false
 +++
 
 If you've ever gotten an Iarnród Éireann train from anywhere west of Portarlington to Dublin, you'll have passed through a railway station named "Sallins & Naas".
@@ -41,7 +40,7 @@ Why do we give precedence to the English typeface instead of the Irish?
 In this day & age, there's no technical restriction on the fonts that can be used on a sign.
 If the Irish language matters enough to be included on the sign, then it matters enough to write it properly.
 
-I'll leave you with another minor complain before ending off this moanfest:
+I'll leave you with another minor complaint before ending off this moanfest:
 if you return eastwards on the train from Sallins, you'll pass through Athlone Station, where in the car park you'll see a sign misspelling the name of the town in Irish as *Átha Luain*[^3].
 Irish signage still has a long way to go.
 
