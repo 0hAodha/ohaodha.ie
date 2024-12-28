@@ -2,6 +2,7 @@
 title = 'To Whom (or Who?) It May Concern'
 date = 2024-12-27T03:06:46Z
 draft = false
+tags = ["article", "language", "linguistics", "grammar", "academia"]
 +++
 
 ## Introduction
