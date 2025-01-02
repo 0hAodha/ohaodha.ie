@@ -71,6 +71,10 @@ Renders a menu for the given menu ID.
   if (savedTheme === 'dark') {
     body.classList.add('dark-theme');
   }
+
+
+  toggleButton.innerText = body.classList.contains('dark-theme') ? '☀' : '☾';
+  toggleButton.style.color = body.classList.contains('dark-theme') ? '#FFFFFF' : '#000000';
 </script>
 
 <style>
