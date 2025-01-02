@@ -14,6 +14,9 @@ Renders a menu for the given menu ID.
   <nav>
     <ul style="display: flex; justify-content: space-between;">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      <li style="display: inline-block; margin-right: 50pt;">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle dark theme">☾</button>
+      </li>
     </ul>
   </nav>
 {{- end }}
@@ -51,3 +54,36 @@ Renders a menu for the given menu ID.
 {{- end }}
 
 <hr>
+
+<script>
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+    toggleButton.innerText = body.classList.contains('dark-theme') ? '☀' : '☾';
+    toggleButton.style.color = body.classList.contains('dark-theme') ? '#FFFFFF' : '#000000';
+    localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+  });
+
+  // Load theme from localStorage on page load
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-theme');
+  }
+</script>
+
+<style>
+.theme-toggle {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+
+  background: none;
+  border: none;
+  color: none;
+
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+</style>

@@ -1,13 +1,36 @@
+:root {
+    --bg-color: #FFFFFF;
+    --fg-color: #000000;
+
+    --visited: #004080;
+    --unvisited: #800040;
+
+    --table-border: #ddd;
+    --table-heading: #f2f2f2;
+}
+
+.dark-theme {
+    --bg-color: #121212;
+    --fg-color: #FFFFFF;
+
+    --visited: #B0CFFF;
+    --unvisited: #FFA7CE;
+
+    --table-border: #353535;
+    --table-heading: #252525;
+}
+
 @font-face {
     font-family: 'Gadelica';
-    /* src: url('/fonts/gadelica-webfont.woff2') format('woff2'), */
-    /*      url('/fonts/gadelica-webfont.woff') format('woff'); */
     src: url('/fonts/Gadelica.woff');
     font-weight: 100;
     font-style: normal;
 }
 
 body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+
     font-family: EB Garamond, Serif;
     font-size: 18px;
     max-width: 600pt;
@@ -49,20 +72,16 @@ img {
 }
 
 a {
-    color: black;
+    color: var(--fg-color);
     text-underline-offset: 0.3em;
 }
 
-/* a:hover { */
-/*     font-weight: bold; */
-/* } */
-
 a:link:hover {
-    color: #004080;
+    color: var(--visited);
 }
 
 a:visited:hover {
-    color: #800040;
+    color: var(--unvisited);
 }
 
 code {
@@ -70,7 +89,7 @@ code {
 }
 
 pre {
-    border: 1px solid #ddd;
+    border: 1px solid var(--table-border);
     padding: 10pt;
 }
 
@@ -78,10 +97,6 @@ pre, code {
     font: Deja Vu Sans Mono, monospace;
     overflow-x: auto;
     white-space: pre;
-    /* background-color: #f6f8fa; */
-    /* border-radius: 4px; */
-    /* padding-left: 1px; */
-    /* padding-right: 1px; */
 }
 
 table {
@@ -95,22 +110,18 @@ table {
 
 th, td {
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid var(--table-border);
     padding: 8px;
     width: 1%;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--table-heading);
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--table-heading);
 }
-
-/* tr:hover { */
-/*   background-color: #ddd; */
-/* } */
 
 figcaption {
     text-align: center;
@@ -123,7 +134,7 @@ figcaption::before {
 
 figure {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--fg-color);
     padding: 10px;
     display: block;
     margin: auto;
@@ -137,7 +148,7 @@ img {
 }
 
 details {
-    border: 1px solid black; /* Border around the details */
+    border: 1px solid var(--fg-color); /* Border around the details */
     padding: 10px; /* Padding inside the border */
     margin: 10px 0; /* Margin to separate multiple details */
 }
@@ -147,14 +158,6 @@ summary {
     outline: none;
     cursor: pointer;
 }
-
-/* details > summary { */
-/*     list-style-image: url("/images/maniscule-right-small.png"); */
-/* } */
-/**/
-/* details[open] > summary { */
-/*     list-style-image: url("/images/maniscule-down-small.png"); */
-/* } */
 
 /* Indent the content inside details */
 details > :not(summary) {
@@ -167,7 +170,7 @@ main > p:first-of-type::first-letter {
     font-size: 40pt;
     font-weight: normal;
     text-transform: capitalize;
-    border: 2px solid black;
+    border: 2px solid var(--fg-color);
     float: left;
     margin: 0 .12em 0 0;
     /* padding: 0.07em; */
@@ -218,22 +221,6 @@ sup {
 
 h1:hover a, h2:hover a, h3:hover a, h4:hover a {
     visibility: visible
-}
-
-blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-}
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
 }
 
 .listing_date {
