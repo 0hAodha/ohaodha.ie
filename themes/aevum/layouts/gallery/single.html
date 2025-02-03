@@ -1,4 +1,23 @@
 {{ define "main" }}
+<head>
+    <style>
+        main > p:first-of-type::first-letter {
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            text-transform: inherit;
+            border: inherit;
+            float: inherit;
+            margin: inherit;
+            line-height: inherit;
+            display: inherit;
+            padding: inherit;
+            padding-top: inherit;
+            padding-bottom: inherit;
+        }
+    </style>
+</head>
+
 <h2>{{ .Title | markdownify }}</h2>
 <p>{{ .Description }}</p>
 <div class="album">
