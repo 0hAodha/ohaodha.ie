@@ -62,7 +62,6 @@ Renders a menu for the given menu ID.
   toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-theme');
     toggleButton.innerText = body.classList.contains('dark-theme') ? '☀' : '☾';
-    toggleButton.style.color = body.classList.contains('dark-theme') ? '#FFFFFF' : '#000000';
     localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
   });
 
@@ -74,7 +73,6 @@ Renders a menu for the given menu ID.
 
 
   toggleButton.innerText = body.classList.contains('dark-theme') ? '☀' : '☾';
-  toggleButton.style.color = body.classList.contains('dark-theme') ? '#FFFFFF' : '#000000';
 </script>
 
 <style>
