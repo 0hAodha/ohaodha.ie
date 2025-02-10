@@ -7,8 +7,9 @@
 
     <h2>Recent Posts</h2>
     <ul>
-        {{ range site.RegularPages }}
+        {{ range first 8 site.RegularPages }}
     <li><a href="{{ .RelPermalink }}"><span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div></li>
         {{ end }}
     </ul>
+    <p style="white-space: pre; font-size: 1.2em; font-weight: bold; text-align: center;">  *  *  *  </p>
 {{ end }}
