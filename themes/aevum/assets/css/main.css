@@ -2,8 +2,8 @@
     --bg-color: #FFFFFF;
     --fg-color: #000000;
 
-    --visited: #004080;
-    --unvisited: #800040;
+    --unvisited: #004080;
+    --visited: #800040;
 
     --table-border: #ddd;
     --table-heading: #f2f2f2;
@@ -13,8 +13,8 @@
     --bg-color: #121212;
     --fg-color: #FFFFFF;
 
-    --visited: #B0CFFF;
-    --unvisited: #FFA7CE;
+    --unvisited: #B0CFFF;
+    --visited: #FFA7CE;
 
     --table-border: #353535;
     --table-heading: #252525;
@@ -71,17 +71,17 @@ img {
     margin: auto;
 }
 
-a {
+a, button {
     color: var(--fg-color);
     text-underline-offset: 0.3em;
 }
 
-a:link:hover {
-    color: var(--visited);
+a:link:hover, button:hover {
+    color: var(--unvisited);
 }
 
 a:visited:hover {
-    color: var(--unvisited);
+    color: var(--visited);
 }
 
 code {
@@ -233,4 +233,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
     .listing_date {
         display: none;
     }
+}
+
+button {
+    cursor: pointer;
 }
