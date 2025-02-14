@@ -76,7 +76,7 @@ a, button {
     text-underline-offset: 0.3em;
 }
 
-a:link:hover, button:hover {
+a:link:hover, button:hover, summary:hover {
     color: var(--unvisited);
 }
 
