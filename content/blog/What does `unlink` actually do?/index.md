@@ -19,5 +19,5 @@ if there are other names for the file in the filesystem (if, say, a hard link ha
 
 The `unlink` syscall is how the `rm` command works under the hood:
 in this sense, the `rm` and `unlink` commands do exactly the same thing, just with slightly different interfaces.
-So, while it's not wrong to delete links to files using the `unlink` command, it *is* wrong to think that `unlink` is necessary to delete links to files or that it's the correct way to delete links to files.
+So, while it's not wrong to delete links to files using the `unlink` command, it *is* wrong to think that `unlink` is necessary to delete links to files or that it's the only correct way to delete links to files.
 The only difference between the two commands is the interface: `rm` has more options and can delete multiple files at a time, whereas `unlink` just deletes a single file.
