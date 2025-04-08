@@ -76,11 +76,11 @@ a, button {
     text-underline-offset: 0.3em;
 }
 
-a:link:hover, button:hover, summary:hover {
+a:link:hover, button:hover, summary:hover, a:link:hover > code {
     color: var(--unvisited);
 }
 
-a:visited:hover {
+a:visited:hover, a:visited:hover > code {
     color: var(--visited);
 }
 
