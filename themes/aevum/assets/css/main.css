@@ -237,3 +237,33 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 button {
     cursor: pointer;
 }
+
+blockquote {
+    background-color: var(--blockquote-bg);
+    border-left: 0.3em solid var(--fg-color);
+    padding: 0.5em;
+    margin: 1em 0;
+    font-style: italic;
+    color: var(--fg-color);
+    opacity: 0.95;
+}
+
+blockquote p {
+    margin: 0.5em 0;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: -0.4em;
+    margin-right: 0.1em;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+    line-height: 0;
+    vertical-align: -0.4em;
+    margin-left: 0.1em;
+}
