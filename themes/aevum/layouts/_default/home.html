@@ -8,7 +8,7 @@
     <h2>Recent Posts</h2>
     <ul>
         {{ range first 8 site.RegularPages }}
-    <li><a href="{{ .RelPermalink }}"><span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div></li>
+    <li><a href="{{ .RelPermalink }}"><span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006-01-02" .Date }}</div></li>
         {{ end }}
     </ul>
 
@@ -24,7 +24,7 @@
             <a href="{{ .RelPermalink }}">
                 <span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}
             </a>
-            <div class="listing_date">{{ time.Format "2006–01–02" .Date }}</div>
+            <div class="listing_date">{{ time.Format "2006-01-02" .Date }}</div>
         </li>
         {{ end }}
     </ul>
