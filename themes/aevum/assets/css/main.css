@@ -267,3 +267,16 @@ blockquote::after {
     vertical-align: -0.4em;
     margin-left: 0.1em;
 }
+
+.hanchor {
+  position: absolute;
+  margin-left: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+}
+
+.hanchor:hover {
+  opacity: 1;
+}
