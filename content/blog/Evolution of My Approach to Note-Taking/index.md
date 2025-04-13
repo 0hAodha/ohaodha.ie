@@ -29,8 +29,8 @@ Furthermore, for reasons I now cannot recall, I would delete all the files relat
 SSD space?) which is quite regrettable, as it means that the Git archive of all my university materials that I maintain will now be forever incomplete.
 
 At this time I still used Microsoft Word documents for any assignment that required writing, but 
-I did use $\LaTeX$ once for a mathematics group project (which was really my introduction to 
-$\LaTeX$), using the online $\LaTeX$ editor [Overleaf](https://www.overleaf.com/).
+I did use $\mathrm{\LaTeX}$ once for a mathematics group project (which was really my introduction to 
+$\mathrm{\LaTeX}$), using the online $\mathrm{\LaTeX}$ editor [Overleaf](https://www.overleaf.com/).
 For any sort of coding, I would use either the Microsoft IDE
 [Visual Studio](https://visualstudio.microsoft.com/) (for C programming) or the Microsoft text 
 editor [Visual Studio Code](https://code.visualstudio.com/) for everything else, such as web development in HTML & JavaScript.
@@ -67,7 +67,7 @@ using [Ubuntu GNU/Linux](https://ubuntu.com/) as my desktop operating system for
 With this change I also decided to try something new for my note-taking approach, and started 
 using the Markdown-based notes application [Logseq](https://logseq.com/).
 I ultimately decided on using Logseq because it was free & open source, had an easy to use &
-pleasant UI, was capable of using $\LaTeX$ typesetting for equations, and had a handy flashcard feature wherein a section of a note could be turned into a flashcard with spaced repetition for
+pleasant UI, was capable of using $\mathrm{\LaTeX}$ typesetting for equations, and had a handy flashcard feature wherein a section of a note could be turned into a flashcard with spaced repetition for
 revision, not dissimilar to Anki.
 It also allowed me to embed PDF documents in the Markdown file of a note and view it in a split
 pane next to the note itself, which was handy for archiving & linking the lecture slides, and
@@ -116,9 +116,9 @@ after I had submitted the assignment, a step in the right direction at least.
 I continued to use merged PDFs to archive lecture slides, and these merged PDFs were invariably
 what I looked back on for study or for assignments.
 
-Having abandoned Windows at the start of the semester, I began to use $\LaTeX$ in Overleaf
+Having abandoned Windows at the start of the semester, I began to use $\mathrm{\LaTeX}$ in Overleaf
 to write assignments, before switching to using it locally in Vim
-as I was missing out on some rather useful features of $\LaTeX$ by only
+as I was missing out on some rather useful features of $\mathrm{\LaTeX}$ by only
 using an online editor, such as the ability to include code blocks in a document by providing the
 path to the source code file.
 Around this time, I also experimented with pre-rolled [Neovim](https://neovim.io/) configurations such as 
@@ -144,7 +144,7 @@ With this, I also made the switch to using a tiling window manager, namely
 [X11](https://www.x.org/wiki/) with a built-in panel.
 
 My second year of university was when I began to start taking lecture notes in Vim with
-$\LaTeX$.
+$\mathrm{\LaTeX}$.
 Like before, these notes were intended to be comprehensive and to be a superset of the content in
 the lecture slides.
 My goal was to create a single PDF document per subject that was like a custom comprehensive 
@@ -162,11 +162,11 @@ was always the possibility that a mistake had slipped into my notes or that they
     <a href="images/Network & Data Communications Notes in LaTeX.png">
         <img src="images/Network & Data Communications Notes in LaTeX.png" alt="Network & Data Communications Notes in LaTeX">
     </a>
-  <figcaption>Network & Data Communications Notes in $\LaTeX$</figcaption>
+  <figcaption>Network & Data Communications Notes in $\mathrm{\LaTeX}$</figcaption>
 </figure>
 
 I only discovered the Vim plugin [VimTex](https://github.com/lervag/vimtex) late in the semester,
-and so I did without automatic $\LaTeX$ compilation, instead using `CTRL+z` to suspend Vim
+and so I did without automatic $\mathrm{\LaTeX}$ compilation, instead using `CTRL+z` to suspend Vim
 and give me access to a shell, and then running a command like
 `pdflatex Notes.tex && fg` to compile the document and return Neovim to the foreground.
 I used the `&&` operator to prevent Neovim from returning to the foreground if the compilation failed, 
@@ -185,14 +185,14 @@ to archive my university materials, but at least I eventually did begin to use v
 For the most part, my approach to note-taking in third year was not very different to the approach I was 
 employing at the end of second year.
 I continued to take comprehensive notes, with one large, textbook-like document per class, with just some
-minor typesetting improvements, and I settled on two $\LaTeX$ document formats: one for short assignments,
+minor typesetting improvements, and I settled on two $\mathrm{\LaTeX}$ document formats: one for short assignments,
 and one for notes & long report-based assignments.
 
 <figure>
     <a href="images/Shorter & Longer Assignment LaTeX Templates.png">
         <img src="images/Shorter & Longer Assignment LaTeX Templates.png" alt="Shorter & Longer Assignment LaTeX Templates">
     </a>
-  <figcaption>Shorter (left) & Longer (right) Assignment $\LaTeX$ Templates</figcaption>
+  <figcaption>Shorter (left) & Longer (right) Assignment $\mathrm{\LaTeX}$ Templates</figcaption>
 </figure>
 
 I began to use [bspwm](https://github.com/baskerville/bspwm) instead of spectrwm as my window manager, as I 
@@ -202,8 +202,8 @@ use [polybar](https://polybar.github.io/) as my desktop panel.
 I began to make extensive use of CLI tools such as `pdfgrep` & [`rga`](https://github.com/phiresky/ripgrep-all)
 to quickly search through lecture slides & notes, and ended my practice of merging the lecture slides into one 
 mega-document, instead just keeping them together in the one directory per subject. 
-I also began to use [LuaLaTeX](https://www.luatex.org/) as my $\LaTeX$ compiler rather than
-`pdflatex` as it has better font support and I like the idea of doing Lua scripting within my $\LaTeX$ 
+I also began to use [LuaLaTeX](https://www.luatex.org/) as my $\mathrm{\LaTeX}$ compiler rather than
+`pdflatex` as it has better font support and I like the idea of doing Lua scripting within my $\mathrm{\LaTeX}$ 
 documents, although I've never encountered a good reason to do so.
 
 Most importantly perhaps, I made the heavy-hearted decision to switch from my beloved Void GNU/Linux to
@@ -223,7 +223,7 @@ distribution.
 However, the AUR is just so unbelievably useful & convenient that I'm willing to put up with these inconveniences,
 at least for the remainder of my university days.
 
-Towards the end of the semester, I began to give up on my $\LaTeX$ notes for some subjects.
+Towards the end of the semester, I began to give up on my $\mathrm{\LaTeX}$ notes for some subjects.
 I realised that for my Database Systems class that I was better off just listening to the lecturer and following their
 examples than trying to transcribe the entirety of the lecture slides to my notes.
 For the last few weeks of term, I just sat in the lecture hall and didn't take any notes, just focusing on the lecture content.
@@ -248,15 +248,15 @@ material at least once.
 My best idea for a note-taking scheme at the moment that addresses the issue of me being distracted in lectures without 
 nullifying the benefits that I receive from carefully transcribing the entirety of the lecture slides is to focus on the
 lecture during the lecture, noting down only what is not in the slides and then at some later time after the lecture 
-transcribe the entirety of the lecture slides, plus my handwritten notes, into a $\LaTeX$ document.
-Because I won't be pressured to keep up with the pace of the lecture while writing my $\LaTeX$ document, I'll be able to take
+transcribe the entirety of the lecture slides, plus my handwritten notes, into a $\mathrm{\LaTeX}$ document.
+Because I won't be pressured to keep up with the pace of the lecture while writing my $\mathrm{\LaTeX}$ document, I'll be able to take
 the time to format & typeset things nicely, and create or source high-quality diagrams. 
 
 I've recently started to take interest in fountain pens, so I think I may use one for note-taking as I find them 
 smoother & more fluid to write with than the conventional ballpoint pen.
 Because my lecture notes would be so sparse in this system, likely rarely exceeding a page per lecture and often being entirely empty, 
 I could use just one single notebook that will contain notes for all my classes.
-I would also continue my paradigm of one comprehensive, textbook-like $\LaTeX$ document per subject, as this has worked well for me 
+I would also continue my paradigm of one comprehensive, textbook-like $\mathrm{\LaTeX}$ document per subject, as this has worked well for me 
 in the past.
 
 My primary concern with this proposed system is that it would require a large amount of time dedicated to note-taking outside 
@@ -268,7 +268,7 @@ I know of at least one person who did not attend any lectures at all in third ye
 slides, to apparently reasonable success.
 
 ### Continuing My Existing Method
-I have at this point largely perfected my $\LaTeX$ note-taking method to my taste, so I am reluctant to give it up when it
+I have at this point largely perfected my $\mathrm{\LaTeX}$ note-taking method to my taste, so I am reluctant to give it up when it
 is tried & true, and only has one significant flaw (being distracted during lectures).
 I think that it would likely be a mistake to forgo this technique that has been so successful for me, especially considering 
 that for the majority of my classes I am unlikely to miss out on something that is said in the lecture but not included in the 
@@ -277,6 +277,6 @@ lecture slides, and so I think I will most likely continue with this approach in
 If however, I encounter another class like my Database Systems class, where there is significantly more to be gained from what
 the lecturer is saying than from the lecture slides, I will take minimal pen & paper notes as detailed in the above section, and 
 pay as much attention as possible.
-These minimal notes, along with the content of the lecture slides, will then be transferred into a $\LaTeX$ document as for my
+These minimal notes, along with the content of the lecture slides, will then be transferred into a $\mathrm{\LaTeX}$ document as for my
 other classes at some later time, either in the evening or on the weekends, which will have the added benefit of forcing me to
 revise the lecture content a little while after the lecture itself.
