@@ -14,7 +14,7 @@ It seems to me that quite a lot of people use `unlink` to remove symbolic links 
 In reality, `unlink` is not a link-remover (in that sense):
 instead, it is an interface to your system's [`unlink` function](https://www.gnu.org/software/libc/manual/html_node/Deleting-Files.html#Deleting-Files), which is how files are deleted "under the hood" on UNIX-like systems.
 This is why it works perfectly well for deleting links on your computer: it deletes *any* file it's directed to, regardless of whether or not it's a link to another file.
-Strictly speaking, the `unlink` command (like the `rm` command) removes a name for a file in the filesystem, and if that name is the last renaming name for the file in that filesystem, the file will be deleted entirely;
+Strictly speaking, the `unlink` command (like the `rm` command) removes a name for a file in the filesystem, and if that name is the last remaining name for the file in that filesystem, the file will be deleted entirely;
 if there are other names for the file in the filesystem (if, say, a hard link has been created), then the file will remain in the filesystem until all of its names are removed or `unlink`ed.
 
 The `unlink` syscall is how the `rm` command works under the hood:
