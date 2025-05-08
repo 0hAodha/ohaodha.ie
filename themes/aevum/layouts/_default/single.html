@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <h2>{{ .Title | markdownify }}</h2>
+    <h2 id="blogpost-title">{{ .Title | markdownify }}</h2>
 
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman :=    time.Format "2006-01-02" .Date }}
