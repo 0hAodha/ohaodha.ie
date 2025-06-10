@@ -2,7 +2,7 @@
 title = 'Building an Affiliation Network for Blog Posts & Tags in Hugo'
 date = 2025-06-10T21:32:55+01:00
 draft = false
-tags = ["article", "mathetmatics", "web", "programming", "tutorial"]
+tags = ["article", "mathematics", "web", "programming", "tutorial"]
 +++
 
 <style>
