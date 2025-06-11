@@ -193,7 +193,7 @@ The nodes of the graph are colour-coded, with <span style="color: #B0CFFF">■</
 Each node is labelled, with blog post nodes displaying the title of the blog post which they represent in a serif font, and tag nodes displaying the name of the tag prepended with a `#` symbol in a monospace font;
 the labels for both types of node are clickable links either to the blog post itself or the page listing all the posts associated with the tag.
 
-This project has been my first foray into data visualisation with D3.js, and while I am pleased with the result, it's nonetheless quite likely that my code is contains a number of rookie mistakes, so if you find any, please do let me know!
+This project has been my first foray into data visualisation with D3.js, and while I am pleased with the result, it's nonetheless quite likely that my code contains a number of rookie mistakes, so if you find any, please do let me know!
 The HTML & JavaScript for the visualisation itself can be seen below:
 
 ```html
