@@ -99,6 +99,11 @@ img {
     margin: auto;
 }
 
+a {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
 a, button {
     color: var(--fg-color);
     text-underline-offset: 0.18em;
