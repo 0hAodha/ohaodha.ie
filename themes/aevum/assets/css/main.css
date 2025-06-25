@@ -101,7 +101,7 @@ img {
 
 a, button {
     color: var(--fg-color);
-    text-underline-offset: 0.3em;
+    text-underline-offset: 0.18em;
 }
 
 a:link:hover, button:hover, summary:hover, a:link:hover > code {
