@@ -33,10 +33,13 @@ In contrast, to construct a meaningful graph of connections between posts on thi
 A **bipartite graph** is a graph $G=(X,E)$ consisting of a node set $X$ and an edge set *E*, where $X$ can be divided into two disjoint subsets $X_1$ & $X_2$ such that:
 - $X_1 \cap X_2 = \emptyset$: that is, the two subsets are completely disjoint and share no nodes between them.
 - $X_1 \cup X_2 = X$: that is, each node in $X$ is in either $X_1$ or $X_2$ --- there are no missing nodes.
+- $X_1$ and $X_2$ are both **independent sets**: no pair of nodes in either $X_1$ or $X_2$ are connected by an edge --- any edges within the graph connect a node in $X_1$ to a node in $X_2$ (and vice-versa, as the edges are undirected), never a node in $X_1$ to another node in $X_1$, or a node in $X_2$ to another node in $X_2$.
 
 ## Building the Graph
 Since this affiliation network will be part of the website and displayed on the [Tags](/tags) page going forward, it will almost certainly be updated repeatedly as time goes on, so the version of the code referred to here will be the first working version of the code published, and will not refer to subsequent versions.
-Furthermore, I imagine the code may need to be tweaked or refactored as the size of the graph grows, so the graph data used for this post will be static from the time of writing.
+Furthermore, I imagine the code may need to be tweaked or refactored as the size of the graph grows, so the graph data used for this post will be static from the time of writing:
+the data displayed in the graph at the top of this page is not updated with subsequent builds of the website, unlike the graph displayed on the [Tags](/tags) page, which is updated with each build.
+
 
 To display an affiliation graph of the relationships between tags & blog posts on this website, it was first necessary to obtain a representation of this graph in a machine-readable format.
 When a website is built in Hugo, HTML files are produced, with the HTML file for each blog post typically containing the tags associated with that blog post, a HTML file for each tag being generated which links to all the blog posts which belong to that taxonomy, and a tags page being generated which lists all the tags used on the website.
@@ -208,7 +211,7 @@ The HTML & JavaScript for the visualisation itself can be seen below:
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 async function drawChart() {
-    const response = await fetch("/blog/graph.json");
+    const response = await fetch("./files/graph.json");
     const data = await response.json();
 
     const width = 1000;
@@ -315,7 +318,7 @@ drawChart();
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 async function drawChart() {
-    const response = await fetch("/blog/graph.json");
+    const response = await fetch("./files/graph.json");
     const data = await response.json();
 
     const width = 1000;
