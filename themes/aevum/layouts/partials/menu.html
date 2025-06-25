@@ -11,7 +11,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
+  <nav class="navbar">
     <ul style="display: flex; justify-content: space-between;">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
       <li style="display: inline-block; margin-right: 50pt;">
@@ -76,7 +76,7 @@ Renders a menu for the given menu ID.
 </script>
 
 <style>
-nav a {
+.navbar {
   word-break: normal;
   overflow-wrap: normal;
   white-space: nowrap;
