@@ -8,6 +8,12 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
+identifier = "gallery"
+name = "Gallery"
+url = "/gallery/"
+weight = 15
+
+[[menus.main]]
 name = 'Blog'
 pageRef = '/blog'
 weight = 20
@@ -18,10 +24,9 @@ pageRef = '/tags'
 weight = 30
 
 [[menus.main]]
-identifier = "gallery"
-name = "Gallery"
-url = "/gallery/"
-weight = 15
+name = 'Git'
+url = 'https://git.ohaodha.ie/aindreas'
+weight = 40
 
 [module]
   [module.hugoVersion]
