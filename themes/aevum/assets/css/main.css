@@ -120,17 +120,19 @@ a:visited:hover, a:visited:hover > code {
 code {
     font-size: 0.9em;
     color: var(--fg-color);
+    overflow-x: auto;
+    word-wrap: break-word;
 }
 
 pre {
     border: 1px solid var(--table-border);
     padding: 10pt;
+    white-space: pre;
 }
 
 pre, code {
     font: Deja Vu Sans Mono, monospace;
     overflow-x: auto;
-    white-space: pre;
 }
 
 table {
