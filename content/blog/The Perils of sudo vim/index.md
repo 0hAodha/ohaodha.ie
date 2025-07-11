@@ -1,6 +1,6 @@
 +++
 title = 'The Perils of `sudo vim`'
-date = 2025-06-11T01:31:20+01:00
+date = 2025-07-11T13:14:53+01:00
 draft = false
 tags = ["linux", "cybersecurity", "article", "programming", "shell", "hacking", "vim"]
 +++
