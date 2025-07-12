@@ -43,6 +43,14 @@ instead, you should perform the same steps that `sudoedit` performs yourself, an
 There are shell scripts which automate this for you online ([`github.com/TinfoilSubmarine/doasedit`](https://github.com/TinfoilSubmarine/doasedit)), but I would recommend against using such options, or making your own:
 the reduced attack surface given by the minimalism of `doas` is rendered null & void if you start increasing the attack surface with random scripts you find online, and you'd be far better off just using `sudo` at that point.
 
+## Addendum
+After publishing this post, the thought occurred to me that I had neglected to mention what I consider to be the easiest workaround for when you've opened a file and edited it without root privileges in Vim, and now you cannot save it because it's write-protected.
+My advice on the matter may be obvious to some, but I've found myself taking needlessly complicated workarounds for this issue in the past, and have witnessed others doing similar, so I thought it's best that I share how to quickly solve this problem.
+
+![Error displayed when a file is `readonly` in Vim](./images/readonly.png "Error displayed when a file is `readonly` in Vim")
+
+Obvious though it may seem, the best approach to solving this issue, especially if you have just finished making lengthy & complex changes to the file, is to simply enter `:w some_temp_file`, where `some_temp_file` is just a filepath that you know you have write privileges for, and then quit and run `sudo cp some_temp_file original_file` to overwrite the original target file with your new changes.
+
 
 [^1]: I would not be surprised if the words "probably fine" have preceded every major cybersecurity incident of the past 20 years.
 
