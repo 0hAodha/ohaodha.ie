@@ -56,13 +56,13 @@ jobs:
       - name: Generate affiliation network
         run: python3 scripts/graph.py
 
-      - name: Deploy to Server via SCP
-        uses: appleboy/scp-action@v0.1.4
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          source: "public/"
-          target: "/var/www/html"
-          strip_components: 1
+      - name: Set up rsync
+        run: |
+          sudo apt install rsync
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy with rsync
+        run: rsync --archive --verbose --compress --delete public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/html/
