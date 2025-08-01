@@ -23,11 +23,6 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
-[[menus.main]]
-name = 'Git'
-url = 'https://git.ohaodha.ie/aindreas'
-weight = 40
-
 [module]
   [module.hugoVersion]
     extended = false
