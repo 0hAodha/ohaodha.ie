@@ -7,7 +7,6 @@ on:
 
   workflow_dispatch:
 
-# Only read access to the repo is needed now
 permissions:
   contents: read
 
@@ -46,7 +45,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          TZ: America/Los_Angeles
+          TZ: Europe/Dublin
         run: |
           hugo --gc --minify --baseURL "https://ohaodha.ie"
 
