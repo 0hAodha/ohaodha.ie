@@ -1,6 +1,6 @@
-baseURL = '0hAodha.github.io/'
-languageCode = 'en-ie'
-title = 'Ó hAoḋa'
+baseURL = "ohaodha.ie"
+languageCode = "en-ie"
+title = "Ó hAoḋa"
 theme = "aevum"
 
 [markup]
