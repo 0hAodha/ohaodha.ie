@@ -2,7 +2,7 @@
     <h2>{{ .Title }}</h2>
 
     {{- with .Content -}}
-        {{ replaceRE `<p>(\s*\w+)` `<p><span style="font-variant: small-caps;">$1</span>` . 1 | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1} <a href="#${2}" class="hanchor" ariaLabel="Anchor">§</a> ${3}` | safeHTML }}
+        {{ replaceRE `<p>(\s*\w+)` `<p><span style="font-variant: small-caps; font-weight: bold;">$1</span>` . 1 | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1} <a href="#${2}" class="hanchor" ariaLabel="Anchor">§</a> ${3}` | safeHTML }}
     {{- end -}}
 
     <h2>Recent Posts</h2>
