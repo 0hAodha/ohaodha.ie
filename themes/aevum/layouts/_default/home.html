@@ -12,15 +12,13 @@
         {{ end }}
     </ul>
 
-    <!-- <p style="white-space: pre; font-size: 1.2em; font-weight: bold; text-align: center;">  *  *  *  </p> -->
-
 <details style="border: inherit; padding: inherit; margin: inherit; text-align: center;">
     <summary style="font-size: 1.2em; font-weight: bold; text-align: center; cursor: pointer; list-style: none; display: inline-block;" title="Show all posts">
         * * *
     </summary>
     <ul style="padding-left: inherit; margin-left: inherit; list-style-position: inside;">
         {{ range after 8 site.RegularPages }}
-        <li style="margin-left: -3pt; padding-left:  5pt; padding-right: 0pt; text-align: left;">
+        <li style="margin-left: 0pt; padding-left: 7pt; padding-right: 0pt; text-align: left;">
             <a href="{{ .RelPermalink }}">
                 <span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}
             </a>
@@ -29,6 +27,4 @@
         {{ end }}
     </ul>
 </details>
-
-
 {{ end }}
