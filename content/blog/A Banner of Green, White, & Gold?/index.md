@@ -9,7 +9,7 @@ tags = ['ireland', 'vexillology', 'pedantry']
 ## The Importance of Orange
 You probably don't need me to tell you that the flag in the above image is the national flag of Ireland.
 You also probably don't need me to tell you that the colours in that image are green, white, & orange.
-However, you may have heard people referring to the colours of the flag as "green, white, & orange" before, or possibly even people "correcting" those who describe the final stripe as "orange" to say "gold", and you may therefore wonder: "is the flag is actually, officially, green, white, & gold?"
+However, you may have heard people referring to the colours of the flag as "green, white, & gold" before, or possibly even people "correcting" those who describe the final stripe as "orange" to say "gold", and you may therefore wonder: "is the flag is actually, officially, green, white, & gold?"
 
 The simple answer is **no**: the flag is green, white, & orange.
 This is specified in the Constitution of Ireland (*Bunreacht na hÉireann*), which specifies only that "the national flag is the tricolour of green, white and orange"[^1], and in the Department of the Taoiseach's guidelines on *The National Flag*[^2], which goes into further detail on the dimensions of the flag and the history behind it.
