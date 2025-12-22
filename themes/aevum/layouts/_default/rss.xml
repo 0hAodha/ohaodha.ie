@@ -43,17 +43,18 @@
 {{- $pages = $pages | first $limit }}
 {{- end }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- printf "<?xml-stylesheet href=\"/rss.xsl\" type=\"text/xsl\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>
       {{ if eq .Title "Home" }}
         {{ .Site.Title }}
       {{ else }}
-        {{ .Title }} on {{ .Site.Title }}
+        {{ .Title }} | {{ .Site.Title }}
       {{ end }}
     </title>
     <link>{{ .Permalink }}</link>
-    <description>{{ if ne .Title .Site.Title }}{{ .Site.Title }} — {{ with .Title }}{{ . }} {{ end }}{{ end }} RSS Feed</description>
+    <description>{{ if ne .Title .Site.Title }}{{ .Site.Title }}: {{ with .Title }}{{ . }} {{ end }}{{ end }} feed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
@@ -70,7 +71,7 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
+      <description>{{ .Content | absURL | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}
   </channel>
