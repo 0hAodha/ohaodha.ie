@@ -6,11 +6,10 @@
             {{ printf `<a href="%s">RSS / Atom Feed</a>` .Permalink | safeHTML }}
         {{ end -}}
     </p>
-    {{ with .Site.Copyright }}
-        <p style="text-align: center;">
-            {{ . | markdownify }}
-        </p>
-    {{ end }}
+    <p style="text-align: center;">
+        Copyright © 2024 Aindréas Ó hAodha. Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">CC BY-NC-SA 4.0</a>.
+        Code licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>.
+    </p>
         This site was last deployed using Hugo version <code style="color: inherit; font-size: 8pt">{{ hugo.Version }}</code> on <code style="color: inherit; font-size: 8pt">{{ time.Now }}</code>.
     </p>
 </div>
