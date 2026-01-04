@@ -23,11 +23,11 @@ async function drawChart() {
     const height = 600;
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    const links = data.links.map(d => ({ ...d }));
+    const edges = data.edges.map(d => ({ ...d }));
     const nodes = data.nodes.map(d => ({ ...d }));
 
     const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(links).id(d => d.id).distance(100))
+        .force("link", d3.forceLink(edges).id(d => d.id).distance(100))
         .force("charge", d3.forceManyBody().strength(-500))
         .force("x", d3.forceX())
         .force("y", d3.forceY());
@@ -42,7 +42,7 @@ async function drawChart() {
         .attr("stroke", "#999")
         .attr("stroke-opacity", 0.6)
         .selectAll("line")
-        .data(links)
+        .data(edges)
         .join("line")
         .attr("stroke-width", d => Math.sqrt(d.value || 1));
 
