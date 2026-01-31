@@ -71,7 +71,7 @@ There are two important points I wish to make on this matter:
 While the guidelines in *The National Flag*[^2] say the flag should be displayed with the green on the left of the observer when hung horizontally, this doesn't mean that an Irish flag displayed with the orange on the observer's left is a different flag: it's just an incorrectly displayed Irish flag.
 
 In conclusion, vexillological pedants are often not even correct about their pedantry, although I don't feel that being correct would make their "corrections" much less irritating.
-It's also worth noting here that the tricolour used my Meagher had the orange stripe on the staff side, like the Ivory Coast flag, and the Constitution of Ireland does not specify a colour order or aspect ratio (although green, then white, then orange is implied).
+It's also worth noting here that the tricolour used by Meagher had the orange stripe on the staff side, like the Ivory Coast flag, and the Constitution of Ireland does not specify a colour order or aspect ratio (although green, then white, then orange is implied).
 
 [^1]: Article 7, Constitution of Ireland. https://www.irishstatutebook.ie/eli/cons/en/html
 [^2]: Department of the Taoiseach, 2018. *The National Flag*. https://www.gov.ie/en/department-of-the-taoiseach/publications/the-national-flag/
