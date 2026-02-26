@@ -1,9 +1,8 @@
 baseURL = "ohaodha.ie"
 languageCode = "en-ie"
-title = "Ó hAodha"
+title = "Ó hAoḋa"
 theme = "aevum"
 copyright = "Copyright © 2024 Aindréas Ó hAodha. Content licensed under CC BY-NC-SA 4.0. Code licensed under GPLv3."
-author = "Aindréas Ó hAodha"
 
 [markup]
     [markup.tableOfContents]
