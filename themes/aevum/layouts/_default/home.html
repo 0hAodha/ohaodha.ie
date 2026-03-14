@@ -7,7 +7,7 @@
 
     <h2>Recent Posts</h2>
     <ul>
-        {{ range first 8 site.RegularPages }}
+        {{ range first 8 (where site.RegularPages "Section" "in" (slice "gallery" "blog")) }}
     <li><a href="{{ .RelPermalink }}"><span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}</a><div class="listing_date">{{ time.Format "2006-01-02" .Date }}</div></li>
         {{ end }}
     </ul>
@@ -17,7 +17,7 @@
         * * *
     </summary>
     <ul style="padding-left: inherit; margin-left: inherit; list-style-position: inside;">
-        {{ range after 8 site.RegularPages }}
+        {{ range after 8 (where site.RegularPages "Section" "in" (slice "gallery" "blog")) }}
         <li style="margin-left: 0pt; padding-left: 7pt; padding-right: 0pt; text-align: left;">
             <a href="{{ .RelPermalink }}">
                 <span style="font-variant: small-caps;">{{ .Section }}:</span> {{ .LinkTitle | markdownify }}
