@@ -1,0 +1,14 @@
+{{/*
+  Partial: globe.html
+  Usage: {{ partial "globe.html" . }}
+
+  Drop this file in: layouts/partials/globe.html
+  Then call it from any page template or content shortcode.
+*/}}
+
+<div id="globe-container" style="width: 100%; max-width: 100%;"></div>
+
+<script type="module">
+  import { initGlobe } from "/js/globe.js";
+  initGlobe("globe-container");
+</script>
