@@ -1,6 +1,6 @@
 +++
 title = 'The Books I Read in January & February 2026'
-date = 2026-02-26T20:20:04Z
+date = 2026-03-15
 tags = [ 'books', 'literature', 'Ireland', 'history', 'philosophy' ]
 +++
 
