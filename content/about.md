@@ -43,3 +43,5 @@ I would like the map to reflect the fact that I've been to Scotland and England,
 There's also the unfortunate effect of this map defining countries only as those recognised by ISO, and therefore could be misconstrued as me making political statements about which countries I do or don't recognise, although I suppose for expediency's sake it makes sense to defer those decisions to a faceless organisation rather than appointing myself as the arbiter of such things.
 
 {{< globe >}}
+
+[^1]: Technically speaking, I don't even have a birth certificate, but a <span class="nihongo">出生届受理証明書</span> (Certificate of Acceptance of Birth Registration).
