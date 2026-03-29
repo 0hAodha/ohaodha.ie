@@ -36,4 +36,10 @@ I also took a weekly introduction to Irish Sign Language class while at universi
 In the below map, I count myself as having visited a country if I've actually set foot on the ground of that country and breathed its air:
 I don't count countries I've only travelled through without setting foot on the ground, but I do count, for example, the United Arab Emirates although I only spent a few hours there on a layover, as I did walk out and about in the city of Abu Dhabi.
 
+At present, this map operates on a per-country basis with countries defined using three-letter country codes ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)), which can appear confusing as, for example, it includes French Guyana as part of France, and therefore because I have been to France, highlights French Guyana as somewhere to which I've been --- despite me never having been south of Washington D.C. in the Americas.
+At some point in the future, I'll likely update this map to operate on a per-territory basis:
+it seems silly that this map suggests I've been to French Guyana or Hawaiʻi, or even the fact that the entire USA is highlighted despite me having only been to Washington D.C.
+I would like the map to reflect the fact that I've been to Scotland and England, but not Wales, and therefore not highlight Wales as somewhere I've been to, but because it treats the entire United Kingdom as a single entity, Wales too is highlighted.
+There's also the unfortunate effect of this map defining countries only as those recognised by ISO, and therefore could be misconstrued as me making political statements about which countries I do or don't recognise, although I suppose for expediency's sake it makes sense to defer those decisions to a faceless organisation rather than appointing myself as the arbiter of such things.
+
 {{< globe >}}
