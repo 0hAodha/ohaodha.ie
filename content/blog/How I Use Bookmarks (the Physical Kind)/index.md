@@ -1,6 +1,6 @@
 +++
 title = 'How I Use Bookmarks (the Physical Kind)'
-date = 2026-03-22T20:08:51Z
+date = 2026-04-22T23:12:15Z
 tags = ["books", "academia", "minutiae"]
 +++
 
