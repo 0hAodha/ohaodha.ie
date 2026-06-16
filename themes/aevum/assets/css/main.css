@@ -56,12 +56,17 @@ li {
     padding-right: 0pt; 
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
 }
 
 h2 {
     font-weight: normal;
+}
+
+h4 {
+    font-weight: normal;
+    font-variant: small-caps;
 }
 
 
@@ -233,4 +238,54 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
     .listing_date {
         display: none;
     }
+}
+
+blockquote {
+    /* font-style: italic; */
+    border-left: 4px solid #ccc;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #555;
+    background: #f9f9f9;
+}
+
+blockquote pre, blockquote code {
+    color: #555;
+}
+
+/* blockquote::before { */
+/*     content: "“"; */
+/*     font-size: 2em; */
+/*     color: #999; */
+/*     margin-right: 5px; */
+/* } */
+
+blockquote p {
+    margin: 0;
+}
+
+.spoiler {
+    background-color: var(--fg-color);
+    color: var(--fg-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.spoiler {
+    transition: color 0.3s ease;
+}
+
+.spoiler:hover, .spoiler:focus {
+    color: var(--bg-color);
+}
+
+.spoiler code {
+    transition: color 0.3s ease;
+}
+
+.spoiler:hover code {
+    color: var(--bg-color);
+    transition: color 0.3s ease;
 }
