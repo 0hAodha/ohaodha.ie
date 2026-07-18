@@ -57,7 +57,7 @@ The characterisation of Finn Mac Cool's lengthy and boring explanations of perso
 A must-read of Irish literature.
 
 An idea that occurred to me while reading this, which I'm sure has both occurred to many others before me (but I've never seen) and which I'm not at all qualified to properly commentate, is that the likes of James Joyce and Brian Ó Nualláin (the legal name of Flann O'Brien), far from being progenitors of a new form of multi-layered and complex writing (often associated with literary modernism), are following in a broader tradition of Irish writing with multiple layers of meaning.
-Perhaps I'm making two kinds of stretches in this argument: first, that the multi-layered storytelling approach so associated with Joyce and his ilk is really comparable or indeed subseqeuent to the multi-layered symbolism of medieval writing, and secondly that this multi-layered symbolism can really be called uniquely Irish.
+Perhaps I'm making two kinds of stretches in this argument: first, that the multi-layered storytelling approach so associated with Joyce and his ilk is really comparable or indeed subsequent to the multi-layered symbolism of medieval writing, and secondly that this multi-layered symbolism can really be called uniquely Irish.
 However, as an example of what I mean, I would direct the reader to the excellent lecture delivered by Dr. Jesse Patrick Harrington in the Dublin Institute for Advanced Studies lecture Series *Samhain agus Science* [*Christian Curses in Medieval Ireland*](https://www.youtube.com/watch?v=U-BsdRl5R0g), in which (among a great many other interesting things), he discusses how St. Patrick was said to have cursed a British king named Coroticus with the words "Lord, if it possible, expel this godless man from this world and from the next", and subsequently Coroticus was transformed into a fox and was never seen again.
 
 Dr. Harrington goes on to describe how in early Irish law, the word {{<gaelic>}}sionnaċ{{</gaelic>}}[^6] or *fox* was also used to refer to an *exile*, and the excommunication from the Church is an *exile* from the Christian community.
@@ -66,7 +66,7 @@ He goes on to explain further symbolism from the story, but to save from me (poo
 > Some audiences may have taken the story literally, as if Coroticus was actually transformed into a fox;
 > the more educated, those familiar with the law, may have taken it figuratively, referring to his exile;
 > while the clergy, for their part, may have taken it morally, referring to his spiritual state.
-> All of these meanings are inherent in the text, and any one of them could have been emphasises to underscore Patrick's spiritual authority, alongside the seriousness of Corticus' offense.
+> All of these meanings are inherent in the text, and any one of them could have been emphasises to underscore Patrick's spiritual authority, alongside the seriousness of Corticus' offence.
 
 It may be interpreted here that I'm foolishly claiming that symbolism is a uniquely Irish invention, but that's not what I mean;
 what I mean is that the complex and unexplained symbolism and themes in something like Joyce's *Ulysses* is, far from being unique to Joyce, something that can be found in Irish literature going back centuries.
@@ -192,7 +192,7 @@ Goethe, being one of the greatest German geniuses[^3] of all time, was sure --- 
 Sadly, I found this collection to be mind-numbingly boring and abandoned reading it, with no intention to pick it back up (for the foreseeable future at least).
 I didn't find any of the contents particularly interesting, just the assorted thoughts of some guy on various subjects, none particularly interesting.
 
-In Goethe's defense, these maxims were originally spread out across several different volumes and not all were published by him in his lifetime, so he can hardly be blamed for them producing a terribly boring book when piled together.
+In Goethe's defence, these maxims were originally spread out across several different volumes and not all were published by him in his lifetime, so he can hardly be blamed for them producing a terribly boring book when piled together.
 There are some really quite good quotes in there, but distilled into one volume like this they come across as little more than mildly interesting shower thoughts.
 Some of my favourites (before I gave up circa p.54) included:
 
@@ -260,12 +260,12 @@ Belloc was a truly fascinating man, and I look forward to reading more of his wo
         *An M.A., by Gob? I, too, am an M.A. of the same wretched university and can prove documentarily (by producing the preposterous "thesis") that the degree, like the university, is a fake.*
 
 [^8]:   The English.
-        Here, Pearse engages in a time-honoured Irish literary tradition by emphasising the unnaturalness of the presence of the invading people, and thus the virtue of those who fighat against them.
+        Here, Pearse engages in a time-honoured Irish literary tradition by emphasising the unnaturalness of the presence of the invading people, and thus the virtue of those who fight against them.
         A particular example of this is the Irish medieval text {{<gaelic>}}Cogad Gáedel re Gallaib{{</gaelic>}} *The War of the Gael with the Foreigners*, which describes the war of Brian Boru against the Vikings: despite there being a more specific word for the Norse ({{<gaelic>}}Loċlannaċ{{</gaelic>}}), the word for foreigner is used instead.
         I think that this point is often overlooked when analysing the history of the Battle of Clontarf: there seems to be a desire by many historians to view Boru's campaign as purely political and power-seeking, and while that very well may have been his own motives (I am not well-informed enough to comment on that subject), it is undeniable that the Irish of the time viewed themselves as a native, singular people, and the Norse as foreign invaders, despite the Norse in question having lived in Ireland for hundreds of years, and most probably never even having been anywhere in the general vicinity of Scandinavia. 
         Thus, a key motive for the war is overlooked, and the Irish victory is viewed as Pyrrhic, despite not being viewed as such at the time (in my opinion).
         An example of what I'm talking about here is the *Battle of Clontarf* episode of the BBC Radio 4 podcast *In Our Time*, in which the expert guests repeatedly translate the word {{<gaelic>}}Gallaib{{</gaelic>}} as "Vikings" instead of the more correct "foreigners", and portray Boru as a political figure and his victory as Pyrrhic.
-        This analysis, in my opinion, fails to account for how Boru motivated the armies of Ireland to unite with him and fight such a formidable force without appealing to their sense of nationalist (? perhaps presumptuous to use such a word for the Irish medieval period) justice and ethnic resentment for the Norse, and why the Irish chroniclers, who were known to happily lambast and satirise any powerful figure they pleased, portray the battle as a success rather than a tragedy.
+        This analysis, in my opinion, fails to account for how Boru motivated the armies of Ireland to unite with him and fight such a formidable force without appealing to their sense of nationalist (? perhaps presumptuous to use such a word for the Irish medieval period) justice and ethnic resentment for the Norse, and why the Irish chroniclers, who were known to happily lambaste and satirise any powerful figure they pleased, portray the battle as a success rather than a tragedy.
 
 [^9]:   Diarmait Mac Murchada was deposed as King of Leinster by the High King of Ireland, and in an effort to to recover his kingdom, solicited military aid from Strongbow and initiated the Anglo-Norman invasion of Ireland, thus earning the epithet "Diarmait of the Foreigners" and general hatred.
         In fairness to the man, he had been robbed of his kingdom and couldn't have been expected to predict the next 800 years of history when he sought help to recover it.
