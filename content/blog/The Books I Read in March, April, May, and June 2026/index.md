@@ -43,7 +43,7 @@ Her spiralling descent into increasingly irrational and erratic behaviour remind
 I found the following quote from the text particularly pertinent:
 > Rumour sometimes follows a more precise logic than fact, and fact more than rumour is apt to have a lie in it somewhere.
 
-## *Crime and Punisment* -- Fyodor Dostoevsky
+## *Crime and Punishment* -- Fyodor Dostoevsky
 I don't think there's any commentary I can add on this book that hasn't been said already: a deeply religious masterpiece.
 One detail that particularly struck me is how Raskolnikov's guilt is cemented by the murder of Lizaveta.
 He could have half-justified, in a brutal and utilitarian way, the murder of the old woman alone, but this crime against nature forces him into a position where he is no longer able to simply opt-in or opt-out of immorality:
