@@ -36,7 +36,7 @@ If an event start at 23:00 and takes 2 hours, we don't say that it finishes at "
 01:00 as $23 + 2 = 25 \equiv 1 \text{ mod } 24$ (25 is *congruent* to 1 modulo 24).
 
 Modular arithmetic can also be thought of as dividing any given number by the modulus and getting the remainder.
-For example, $30 \text{ mod } 24 \equiv 6 $ because $30 \div 24 = 0 \text{ remainder } 6.$
+For example, $30 \text{ mod } 24 \equiv 6 $ because $30 \div 24 = 1 \text{ remainder } 6.$
 
 Incidentally, many resources refer to the 12-hour clock as a classic example of a system of modular arithmetic, but I think
 that this is a poor example as the 12-hour clock starts at 1 and ends at 12, meaning that it's not quite modulo 12
