@@ -1,10 +1,11 @@
-+++
-title = 'Tags'
-date = 2023-01-01T08:30:00-07:00
-draft = false
-+++
+{{- /*
+Renders an interactive D3.js affiliation network graph for blog posts and tags.
 
-{{< raw >}}
+@context {page} page The current page (optional, used for context).
+
+@example: {{ partial "graph.html" . }}
+*/}}
+
 <style>
     svg text {
         fill: currentColor;
@@ -22,6 +23,11 @@ async function drawChart() {
     const width = 1000;
     const height = 600;
     const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    // Get CSS custom property values for link colors
+    const styles = getComputedStyle(document.documentElement);
+    const unvisitedColor = styles.getPropertyValue('--unvisited').trim() || '#004080';
+    const visitedColor = styles.getPropertyValue('--visited').trim() || '#800040';
 
     const links = data.links.map(d => ({ ...d }));
     const nodes = data.nodes.map(d => ({ ...d }));
@@ -47,13 +53,13 @@ async function drawChart() {
         .attr("stroke-width", d => Math.sqrt(d.value || 1));
 
     const node = svg.append("g")
-        .attr("stroke", "#fff")
+        .attr("stroke", "var(--fg-color)")
         .attr("stroke-width", 1.5)
         .selectAll("circle")
         .data(nodes)
         .join("circle")
         .attr("r", d => d.title ? 12 : 8)
-        .attr("fill", d => d.title ? "#B0CFFF" : "#FFA7CE")
+        .attr("fill", d => d.title ? unvisitedColor : visitedColor)
         .call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
@@ -67,7 +73,7 @@ async function drawChart() {
         .data(nodes)
         .join("a")
         .attr("xlink:href", d => d.title ? `/blog/${d.id}` : `/tags/${d.id}`)
-        .attr("target", "_blank") // Open in new tab
+        .attr("target", "_blank")
         .append("text")
         .attr("font-family", d => d.title ? "inherit" : "monospace")
         .attr("font-size", d => d.title ? 16 : 12)
@@ -116,4 +122,3 @@ async function drawChart() {
 
 drawChart();
 </script>
-{{< /raw >}}
