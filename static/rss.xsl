@@ -11,8 +11,6 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><xsl:value-of select="title"/> - RSS Feed</title>
-
-    <link rel="stylesheet" href="/syntax.css"/>
     <style>
         :root {
             --bg-color: #FFFFFF;
@@ -156,6 +154,10 @@
             overflow-wrap: anywhere;
         }
         
+        .item h2 a:visited {
+            color: var(--visited);
+        }
+        
         .item h2 a:hover {
             opacity: 0.8;
         }
@@ -171,6 +173,46 @@
         .item-description {
             line-height: 1.5;
             margin-top: 10px;
+        }
+        
+        .item-description a {
+            color: var(--unvisited);
+            text-decoration: underline;
+            text-underline-offset: 0.18em;
+        }
+        
+        .item-description a:visited {
+            color: var(--visited);
+        }
+        
+        .item-description a:hover {
+            color: var(--unvisited);
+        }
+        
+        .item-description a:visited:hover {
+            color: var(--visited);
+        }
+        
+        img {
+            display: block;
+            max-width: 600pt;
+            max-width: 100%;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        
+        figure {
+            text-align: center;
+            border: 1px solid var(--fg-color);
+            padding: 10px;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        
+        figcaption {
+            text-align: center;
+            text-justify: inter-word;
         }
         
         @media (max-width: 650px) {
@@ -194,8 +236,8 @@
         </header>
         
         <div class="subscribe-info">
-            <p><strong>📡 This is an RSS feed</strong></p>
-            <p>Copy the URL from your browser's address bar and paste it into your RSS reader to subscribe.</p>
+            <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 0.3em;"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>This is an RSS Feed</strong></p>
+            <p>Copy this URL into your RSS reader to subscribe. I personally use <a href="https://codeberg.org/newsraft/newsraft">newsraft</a></p>
         </div>
         
         <ul class="items">
@@ -208,7 +250,13 @@
                     </h2>
                     <div class="item-meta">
                         <xsl:if test="pubDate">
-                            <time><xsl:value-of select="pubDate"/></time>
+                            <time>
+                                <xsl:value-of select="substring(pubDate, 6, 2)"/>
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="substring(pubDate, 9, 3)"/>
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="substring(pubDate, 13, 4)"/>
+                            </time>
                         </xsl:if>
                     </div>
                     <xsl:if test="description">
