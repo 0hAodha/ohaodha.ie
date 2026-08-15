@@ -1,7 +1,7 @@
 +++
 title = 'How I Listen to Music'
-date = 2025-12-18T01:46:31Z
-tags = [ 'music', 'linux', 'programming', 'shell' ]
+date = 2026-08-15T23:48:10Z
+tags = [ 'music', 'linux', 'programming', 'shell', 'hacking' ]
 +++
 
 ## Introduction
@@ -24,10 +24,6 @@ Several years ago now, I decided to stop using Spotify as my primary means of li
 For these reasons, as well as a general migration in my life away from proprietary software to FOSS solutions, I decided to build a locally-stored music library consisting of lossless audio files.
 I recently lost my library of music files while running reckless `rm` commands while sleep-deprived circa 04:00 one morning, which is one of the primary drawbacks of having everything locally, but anyone who's not an absolute fool would be smart enough to have a back-up ~~(except me)~~.
 So, while I'm rebuilding my music collection from scratch, I was inspired to write about my system in detail, as it's grown quite sophisticated over the years.
-
-## Where I Get My Music From
-I primarily source my music from the Soulseek file-sharing network, using the client Nicotine+ Soulseek client.
-Of course, file-sharing of copyrighted materials is **illegal**, and therefore I exclusively source music from Soulseek that is in the public domain (for example, songs for which the author has been dead for 70+ years and thus are no longer protected by copyright) --- I source all copyrighted materials through entirely legal means, and would never encourage anyone to obtain any copyrighted materials illicitly.
 
 ## How I Organise My Music Library
 The majority of music players organise music by the tags within the file metadata, deriving song titles, album titles, and band names in this manner;
@@ -59,6 +55,7 @@ each file is stored under the directory structure of Band Name ☞ Album Name �
 │   │   ├── '04. Heaven Beside You.flac'
 │   │   ├── '04. Heaven Beside You.lrc'
 │   │   <etc> ...
+
 ```
 
 There are three primary pet peeves which annoy me about other directory structures I've seen for music libraries:
@@ -88,9 +85,9 @@ There are three primary pet peeves which annoy me about other directory structur
       - Replace **`"`** (`U+0022 QUOTATION MARK`) with **`“`** (`U+201C LEFT DOUBLE QUOTATION MARK`) and **`”`** (`U+201D RIGHT DOUBLE QUOTATION MARK`).
       - Replace **`/`** (`U+002F SOLIDUS`) with **`⧸`** (`U+29F8 BIG SOLIDUS`).
 
-    If, however, you want to ensure the portability of your music library to different operating systems & filesystems, you'll have to consider the restrictions of those filesystems as well; if you want completely generalisable, filesystem-agnostic filename normalisation, then I can concede that perhaps *in that very specific situation for compatibility with **all** filesystems* that a general replace of special characters with underscores is justifiable.
+    If, however, you want to ensure the portability of your music library to different operating systems & filesystems, you'll have to consider the restrictions of those filesystems as well; if you want completely generalisable, filesystem-agnostic filename normalisation, then I can concede that perhaps *in that particular situation for compatibility with **all** filesystems* that a general replace of special characters with underscores is justifiable.
     For my uses, I also want my music library to be synchronised to my Android smartphone:
-    since Android uses the FAT32 
+    since Android uses the FAT32 filesystem, which is rather archaic in the characterset it supports, I am forced to be more aggressive in my substitution of characters that I would otherwise like to be.
 
 Regardless of my directory-based approach instead of a tags-based approach, I try to ensure that my music is properly tagged in an effort to ensure portability across devices and for future-proofing.
 I do this using [**beets**](https://docs.beets.io/en/latest/index.html), a music organiser which you can use to import a collection of music files, which it will tag using sources including the [MusicBrainz](https://musicbrainz.org/) database, rename as appropriate in keeping with your naming conventions, and run plug-ins or user-specified hooks on the imported files.
@@ -141,7 +138,7 @@ I've also written a number of scripts to play music in different ways over the y
 - **[`music_dmenu.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/music_dmenu.sh):** creates a hierarchical [`dmenu`](https://tools.suckless.org/dmenu/) prompt based on the files in your music directory which allows you to play a specific artist, album, or track.
   Cumbersome to use, as playing a particular track requires you to select `Track` in the first prompt, then the artist, then the album, and then the track itself --- probably only really useful for playing a particular artist as you would just select `Artist` and then the artist's name.
 - **[`play_music.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/play_music.sh):** plays an album based off a given artist name and album name.
-  Usage: `play_music.sh "The Chieftans" "(1995) The Long Black Veil"`.
+  Usage: `play_music.sh "Fontaines D.C." "(2022) Skinty Fia"`.
   This worked well before I started including release years in the filepath, as while it's not especially unreasonable to require the user to know the precise artist name and album name, it's a bit much to expect them to know the album's release year as well, and so I don't really use it anymore.
 - **[`fzfplay.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/fzfplay.sh):** uses [`fd`](https://github.com/sharkdp/fd) (a faster[^7] alternative to the POSIX [`find`](https://www.man7.org/linux/man-pages/man1/find.1.html)) to list all the tracks in the music directory[^8], and allows the user to search them with [`fzf`](https://github.com/junegunn/fzf) (a command-line fuzzy finder).
   For me, this is not only far superior to the other two scripts mentioned here, it's superior to any other method of enqueueing music I've encountered in any other application --- its speed and convenience are unparalleled.
@@ -173,9 +170,12 @@ I've also written a number of scripts to play music in different ways over the y
   - You could probably take it as an axiom that given that song titles are forced to be quite short and are often chosen with some view towards uniqueness or recognisability, whereas song lyrics have no such length constraints and have far less of a focus on uniqueness (though, of course, still have some focus on uniqueness), that the likelihood of a any given sub-string occurring in a song title is far lower than the likelihood of it occurring in a song's lyrics, and that therefore its presence in a song's title is more meaningful for providing relevant search results.
 
 ## Sharing Music Between Devices
-
-- yet to figure out a good way to do this
-- current phone doesn't have enough storage
+I use [Syncthing](https://syncthing.net/) for sharing music between my laptop and my phone;
+on my phone, I use the Android Syncthing client [Syncthing-Fork](https://github.com/researchxxl/syncthing-android) (set to open directly to the web view window, as I find that the most intuitive interface).
+Because my music collection consists of FLAC files, it's rather large and therefore takes up a lot of storage space:
+it was for this reason that one of my primary "must-haves" for my most recent smartphone purchase was 256Gb of storage.
+In the future, I may look into compressing my music before syncing it to other devices, and using the FLAC files primarily for archival purposes, or on my home computer where I can attach additional storage without having to worry about transporting it.
+For the time being, my music collection does still fit on my phone, so I can worry about that another day.
 
 [^1]: Besides the following research papers which substantiate this claim, this is intuitively self-evident: someone who listens to the Dead Kennedys is likely to have anarcho-lefist views, a Tom MacDonald listener is likely to have conservative views, a Wolfe Tones listener is likely to have Irish republican views ---[^2] and so on, and doubly so for inferring one's religion if they tend to listen to Orthodox chants or Islamic _nasheeds_.
 
