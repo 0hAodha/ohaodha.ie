@@ -4,6 +4,8 @@ title = "Ó hAoḋa"
 theme = "aevum"
 copyright = "Copyright © 2024 Aindréas Ó hAodha. Content licensed under CC BY-NC-SA 4.0. Code licensed under GPLv3."
 
+ignoreFiles = ['.*\.(png|jpg|jpeg|webp|gif|tiff)$']
+
 [markup]
     [markup.tableOfContents]
         ordered = true
