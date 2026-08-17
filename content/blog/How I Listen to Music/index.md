@@ -1,6 +1,6 @@
 +++
 title = 'How I Listen to Music'
-date = 2026-08-15T23:48:10Z
+date = 2026-08-15
 tags = [ 'music', 'linux', 'programming', 'shell', 'hacking' ]
 +++
 
