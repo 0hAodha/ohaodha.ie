@@ -100,7 +100,7 @@ hook:
       command: 'karaoke.pl "{album.path}"'
 ```
 
-This hook runs once an album has been imported and executes a script I wrote called [**`karaoke.pl`**](https://github.com/0hAodha/utility_scripts/blob/main/src/karaoke.pl) to 
+This hook runs once an album has been imported and executes a script I wrote called [**`karaoke.pl`**](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/karaoke.pl) to 
 fetch lyrics for music files from the [LRCLIB API](https://lrclib.net/docs) and save them to `*.lrc` files.
 Surprisingly, I couldn't find a good solution for downloading the synchronised lyrics for a song programmatically, so I had to write my own script to do so.
 
@@ -118,7 +118,7 @@ running `umpv file1.mp3; umpv file2.mp3` will append `file2.mp3` to the original
 ![Screenshot of mpv displaying lyrics](./images/mpv_lyrics.png "`mpv` displaying lyrics")
 
 I use the [**`lf`**](https://github.com/gokcehan/lf) terminal file manager to manage and browse all my files, including music files.
-Previews for each file are generated using a script I wrote called [**`file_previewer.sh`**](https://github.com/0hAodha/utility_scripts/blob/main/src/file_previewer.sh):
+Previews for each file are generated using a script I wrote called [**`file_previewer.sh`**](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/file_previewer.sh):
 if the album cover is available, it's displayed in the terminal using [`chafa`](https://hpjansson.org/chafa/)[^9] --- otherwise, a waveform image is generated using [`ffmpeg`](https://ffmpeg.org/) and also displayed with `chafa`.
 
 ```shell{linenostart=51}
@@ -135,12 +135,12 @@ if the album cover is available, it's displayed in the terminal using [`chafa`](
 ![Screenshot of lf displaying the audio waveform in the absence of a cover image](./images/lf_waveform.png "`lf` with audio waveform preview in the absence of cover image")
 
 I've also written a number of scripts to play music in different ways over the years, although I only really use the last script listed here now:
-- **[`music_dmenu.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/music_dmenu.sh):** creates a hierarchical [`dmenu`](https://tools.suckless.org/dmenu/) prompt based on the files in your music directory which allows you to play a specific artist, album, or track.
+- **[`music_dmenu.sh`](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/music_dmenu.sh):** creates a hierarchical [`dmenu`](https://tools.suckless.org/dmenu/) prompt based on the files in your music directory which allows you to play a specific artist, album, or track.
   Cumbersome to use, as playing a particular track requires you to select `Track` in the first prompt, then the artist, then the album, and then the track itself --- probably only really useful for playing a particular artist as you would just select `Artist` and then the artist's name.
-- **[`play_music.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/play_music.sh):** plays an album based off a given artist name and album name.
+- **[`play_music.sh`](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/play_music.sh):** plays an album based off a given artist name and album name.
   Usage: `play_music.sh "Fontaines D.C." "(2022) Skinty Fia"`.
   This worked well before I started including release years in the filepath, as while it's not especially unreasonable to require the user to know the precise artist name and album name, it's a bit much to expect them to know the album's release year as well, and so I don't really use it anymore.
-- **[`fzfplay.sh`](https://github.com/0hAodha/utility_scripts/blob/main/src/fzfplay.sh):** uses [`fd`](https://github.com/sharkdp/fd) (a faster[^7] alternative to the POSIX [`find`](https://www.man7.org/linux/man-pages/man1/find.1.html)) to list all the tracks in the music directory[^8], and allows the user to search them with [`fzf`](https://github.com/junegunn/fzf) (a command-line fuzzy finder).
+- **[`fzfplay.sh`](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/fzfplay.sh):** uses [`fd`](https://github.com/sharkdp/fd) (a faster[^7] alternative to the POSIX [`find`](https://www.man7.org/linux/man-pages/man1/find.1.html)) to list all the tracks in the music directory[^8], and allows the user to search them with [`fzf`](https://github.com/junegunn/fzf) (a command-line fuzzy finder).
   For me, this is not only far superior to the other two scripts mentioned here, it's superior to any other method of enqueueing music I've encountered in any other application --- its speed and convenience are unparalleled.
   ```shell
   #!/bin/sh

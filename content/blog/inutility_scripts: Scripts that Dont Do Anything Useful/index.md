@@ -6,9 +6,9 @@ tags = ["hacking", "linux", "programming", "shell"]
 +++
 
 ## Introduction
-Roughly two years ago now, I created my [`utility_scripts`](https://github.com/0hAodha/utility_scripts) repository on GitHub, which contains all the scripts that I've written for use on my GNU/Linux laptop.
-These scripts are generally short, useful scripts, that make basic tasks on my computer easier, ranging from creating dynamic menus to select [Bluetooth devices](https://github.com/0hAodha/utility_scripts/blob/main/src/bluetooth_dmenu.pl) or [WiFi networks](https://github.com/0hAodha/utility_scripts/blob/main/src/wifi_dmenu.sh) to connect to, to listing the [count of open windows on a workspace](https://github.com/0hAodha/utility_scripts/blob/main/src/bspwm_window_count.sh) or [connected Bluetooth devices](https://github.com/0hAodha/utility_scripts/blob/main/src/bluetooth_info.pl) in the status bar of my desktop, and more.
-Originally a copy of my `~/scripts/` directory, the repository now lives with all my other GitHub repositories at `~/code/github/0hAodha/utility_scripts/` and `~/code/scripts/` is symlinked to the `utility_scripts/src` directory, and is in my `$PATH`, so any of these scripts are accessible as commands on my system.
+Roughly two years ago now, I created my [`utility_scripts`](https://github.com/0x4A0D4A/utility_scripts) repository on GitHub, which contains all the scripts that I've written for use on my GNU/Linux laptop.
+These scripts are generally short, useful scripts, that make basic tasks on my computer easier, ranging from creating dynamic menus to select [Bluetooth devices](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/bluetooth_dmenu.pl) or [WiFi networks](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/wifi_dmenu.sh) to connect to, to listing the [count of open windows on a workspace](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/bspwm_window_count.sh) or [connected Bluetooth devices](https://github.com/0x4A0D4A/utility_scripts/blob/main/src/bluetooth_info.pl) in the status bar of my desktop, and more.
+Originally a copy of my `~/scripts/` directory, the repository now lives with all my other GitHub repositories at `~/code/github/0x4A0D4A/utility_scripts/` and `~/code/scripts/` is symlinked to the `utility_scripts/src` directory, and is in my `$PATH`, so any of these scripts are accessible as commands on my system.
 
 However, I eventually found that the `utility_scripts` repository was restrictive in content:
 it was restricted to containing only *useful* scripts, and I had a number of scripts that I wanted to share that I couldn't in good faith describe as "useful", and so I created a new repository named `inutilty_scripts`: a collection of miscellaneous scripts that don't do anything useful.
@@ -17,7 +17,7 @@ Some of these scripts are entirely useless, but others demonstrate some interest
 
 ## `inutility_scripts`
 ### `recursive.sh`
-[`recursive.sh`](https://github.com/0hAodha/inutility_scripts/blob/main/src/recursive.sh) is a script that calls itself, recursively.
+[`recursive.sh`](https://github.com/0x4A0D4A/inutility_scripts/blob/main/src/recursive.sh) is a script that calls itself, recursively.
 While I can't think of any uses for this, I don't find it particularly difficult to imagine that a recursive shell script *could* be useful for some task or another, as recursion has many useful applications with regards to function calls.
 
 ```shell
@@ -50,7 +50,7 @@ the shell level is reset to `1` once it hits `1000`, and 1,000 shells can be acc
 
 
 ### `self_destruct.sh`
-[`self_destruct.sh`](https://github.com/0hAodha/inutility_scripts/blob/main/src/self_destruct.sh) is the simplest of inutility scripts, and simply deletes itself.
+[`self_destruct.sh`](https://github.com/0x4A0D4A/inutility_scripts/blob/main/src/self_destruct.sh) is the simplest of inutility scripts, and simply deletes itself.
 
 ```shell
 #!/bin/sh
@@ -115,7 +115,7 @@ We can also use [`lsof(8)`](https://www.man7.org/linux/man-pages/man8/lsof.8.htm
 Thus we know that a shell script will continue to execute even if its source file is deleted, because it retains an open file descriptor for that file from which it can read its contents until termination.
 
 ### `disappearing.sh`
-[`disappearing.sh`](https://github.com/0hAodha/inutility_scripts/blob/main/src/disappearing.sh) is a script that disappears from the filesystem (or, more precisely, the directory entries) during execution and re-appears once it has finished executing.
+[`disappearing.sh`](https://github.com/0x4A0D4A/inutility_scripts/blob/main/src/disappearing.sh) is a script that disappears from the filesystem (or, more precisely, the directory entries) during execution and re-appears once it has finished executing.
 It is something of a natural follow-on from `self_destruct.sh` in that it is a script that deletes its own source code, and also because it exploits the fact that a script will continue to execute uninterrupted even if its source file is deleted. 
 
 ```shell
@@ -143,7 +143,7 @@ Of course, the script hasn't truly disappeared from the filesystem, only the dir
 
 
 ### `suicidal.sh`
-[`suicidal.sh`](https://github.com/0hAodha/inutility_scripts/blob/main/src/suicidal.sh) is a script that kills itself, that is, its own process.
+[`suicidal.sh`](https://github.com/0x4A0D4A/inutility_scripts/blob/main/src/suicidal.sh) is a script that kills itself, that is, its own process.
 
 ```shell
 #!/bin/sh
@@ -164,7 +164,7 @@ however, I would suggest that a mutex or semaphore of some kind would likely be 
 
 
 ### `trippy.sh`
-[`trippy.sh`](https://github.com/0hAodha/inutility_scripts/blob/main/src/trippy.sh) is, in my opinion, by far the least useful script in this repository: it simply writes random data to the user's display in an infinite loop, creating visuals that a hip and cool youngster such as myself[^4] might describe as "trippy".
+[`trippy.sh`](https://github.com/0x4A0D4A/inutility_scripts/blob/main/src/trippy.sh) is, in my opinion, by far the least useful script in this repository: it simply writes random data to the user's display in an infinite loop, creating visuals that a hip and cool youngster such as myself[^4] might describe as "trippy".
 
 ```shell
 #!/bin/sh 
